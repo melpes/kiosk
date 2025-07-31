@@ -15,36 +15,37 @@
 ```mermaid
 graph TB
     subgraph "입력 계층"
-        A[🎤 음성 입력] --> B[📝 텍스트 입력]
+        A[🎤 음성 입력]
+        B[📝 텍스트 입력]
+        E[🎯 VAD Processing]
     end
-    
+
     subgraph "전처리 계층"
         C[🔧 AudioProcessor]
         D[🗣️ Speaker Separation]
-        E[🎯 VAD Processing]
     end
-    
+
     subgraph "인식 계층"
         F[🗨️ Speech Recognition<br/>Whisper]
         G[🧠 Intent Recognition<br/>GPT-4o]
     end
-    
+
     subgraph "비즈니스 로직"
         H[💬 Dialogue Manager]
         I[🍔 Order Manager]
         J[📋 Menu System]
     end
-    
+
     subgraph "출력 계층"
         K[📞 Response Builder]
         L[🔊 TTS Manager]
         M[📱 Client Response]
     end
-    
-    A --> C
+
+    A --> E
+    E --> C
     C --> D
-    D --> E
-    E --> F
+    D --> F
     B --> G
     F --> G
     G --> H
@@ -54,7 +55,7 @@ graph TB
     J --> K
     K --> L
     L --> M
-    
+
     style F fill:#e1f5fe
     style G fill:#f3e5f5
     style H fill:#e8f5e8
@@ -69,14 +70,14 @@ graph TB
 
 ```mermaid
 flowchart TD
-    Start([🎤 음성 입력 시작]) --> AudioCheck{음성 데이터<br/>유효성 검사}
+    Start([🎤 음성 입력 시작]) --> VAD[🎯 VAD 처리]
+    VAD --> AudioCheck{음성 데이터<br/>유효성 검사}
     
     AudioCheck -->|유효| PreProcess[🔧 오디오 전처리]
     AudioCheck -->|무효| ErrorHandle[❌ 오류 처리]
     
     PreProcess --> SpeakerSep[🗣️ 화자 분리]
-    SpeakerSep --> VAD[🎯 VAD 처리]
-    VAD --> STT[🗨️ 음성인식<br/>Whisper]
+    SpeakerSep --> STT[🗨️ 음성인식<br/>Whisper]
     
     STT --> ConfidenceCheck{음성인식<br/>신뢰도 검사}
     ConfidenceCheck -->|높음 ≥0.7| Intent[🧠 의도 인식]
@@ -267,25 +268,25 @@ graph TB
     subgraph "입력 처리"
         A[🗣️ 음성인식 결과] --> B{발음 오류<br/>감지}
     end
-    
+
     subgraph "LLM 프롬프트 처리"
         B -->|오류 있음| C[🧠 GPT-4o<br/>유사도 분석]
         B -->|정확함| D[✅ 직접 처리]
-        
+
         C --> E[📝 발음 패턴<br/>매칭]
         E --> F[🔄 의미 변환]
     end
-    
+
     subgraph "예시 변환"
-        G["본품" → "단품"]
-        H["휴지" → "취소"]
-        I["베그맥" → "빅맥"]
+        G1["본품"] --> G2["단품"]
+        H1["휴지"] --> H2["취소"]
+        I1["베그맥"] --> I2["빅맥"]
     end
-    
-    F --> G
-    F --> H
-    F --> I
-    
+
+    F --> G1
+    F --> H1
+    F --> I1
+
     style C fill:#e1f5fe
     style E fill:#f3e5f5
 ```
@@ -361,38 +362,6 @@ graph LR
 
 ## 📊 성능 모니터링 & 분석
 
-### 신뢰도 분포 분석
-
-```mermaid
-pie title 신뢰도 분포 예시
-    "Very High (≥0.9)" : 35
-    "High (0.7-0.9)" : 40
-    "Medium (0.5-0.7)" : 20
-    "Low (<0.5)" : 5
-```
-
-### 처리 시간 성능 지표
-
-```mermaid
-graph TB
-    subgraph "성능 메트릭"
-        A[⏱️ 음성인식<br/>평균 2.3초]
-        B[🧠 의도파악<br/>평균 0.8초]
-        C[💬 대화처리<br/>평균 0.5초]
-        D[📞 응답생성<br/>평균 0.3초]
-    end
-    
-    subgraph "전체 파이프라인"
-        E[🎯 총 처리시간<br/>평균 3.9초]
-    end
-    
-    A --> E
-    B --> E
-    C --> E
-    D --> E
-    
-    style E fill:#4caf50
-```
 
 ### 오류 처리 흐름
 
