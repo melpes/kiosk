@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 음성 클라이언트</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .container {
+            flex: 1;
+            max-width: none;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .sidebar {
+            width: 350px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            transform: translateX(100%);
+        }
+        
+        .sidebar.collapsed {
+            transform: translateX(100%);
+        }
+        
+        .sidebar:not(.collapsed) {
+            transform: translateX(0);
+        }
+        
+        .sidebar-header {
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .sidebar-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .sidebar-content {
+            padding: 20px;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+        }
+        
+        .sidebar-menu {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .sidebar-menu h3 {
+            margin: 0;
+            padding: 15px;
+            font-size: 16px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .sidebar-menu-content {
+            padding: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .sidebar-menu-item {
+            background: rgba(255,255,255,0.15);
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border-left: 4px solid #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-menu-item:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateX(3px);
+        }
+        
+        .sidebar-menu-item .item-name {
+            font-weight: bold;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        
+        .sidebar-menu-item .item-description {
+            font-size: 11px;
+            opacity: 0.9;
+            margin-bottom: 6px;
+        }
+        
+        .sidebar-menu-item .item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .sidebar-menu-item .item-category {
+            background: rgba(255,255,255,0.3);
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+        
+        .sidebar-menu-item .item-price {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .sidebar-menu-empty {
+            padding: 20px;
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-style: italic;
+        }
+        
+        .sidebar-menu-toggle-btn {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 8px;
+            border-radius: 8px 0 0 8px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+        }
+        
+        .sidebar-menu-toggle-btn:hover {
+            background: #c0392b;
+            transform: translateY(-50%) translateX(-5px);
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .menu-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .collapsible-section {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .collapsible-section.collapsed {
+            max-height: 0;
+            padding: 0 20px;
+            border-top: none;
+        }
+        
+        .section-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-top: 1px solid #eee;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .section-header:hover {
+            background: #e9ecef;
+        }
+        
+        .section-header h3 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        
+        .section-arrow {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        
+        .section-arrow.collapsed {
+            transform: rotate(-90deg);
+        }
+        
+        .header h1 {
+            margin-bottom: 10px;
+        }
+        
+        .status {
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .status.connected {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.disconnected {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .controls {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-start {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-start:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+        
+        .btn-stop {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .btn-stop:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+        
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .config-section {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .config-section h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .config-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .log-section {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .log-entry {
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        .log-info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .log-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .log-warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .log-transcription {
+            background: #d4edda;
+            color: #155724;
+            font-weight: bold;
+        }
+        
+        .log-response {
+            background: #cce5ff;
+            color: #004085;
+            font-weight: bold;
+        }
+        
+        .log-audio {
+            background: #e2e3e5;
+            color: #383d41;
+            font-weight: bold;
+        }
+        
+        .log-server {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .indicator {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+        
+        .indicator.green {
+            background: #28a745;
+        }
+        
+        .indicator.red {
+            background: #dc3545;
+        }
+        
+        .audio-player {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .audio-player audio {
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        .server-info {
+            padding: 15px;
+            margin: 20px;
+            background: #e9ecef;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .server-info h4 {
+            margin-bottom: 10px;
+            color: #495057;
+        }
+        
+        .info-item {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #6c757d;
+        }
+        
+        .processing-indicator {
+            display: none;
+            padding: 10px;
+            margin: 10px 20px;
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .processing-indicator.active {
+            display: block;
+        }
+        
+        .confidence-bar {
+            width: 100%;
+            height: 4px;
+            background: #e9ecef;
+            border-radius: 2px;
+            margin-top: 5px;
+            overflow: hidden;
+        }
+        
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #dc3545 0%, #ffc107 50%, #28a745 100%);
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- 사이드바 토글 버튼 -->
+    <button class="sidebar-menu-toggle-btn" onclick="toggleSidebar()" title="메뉴 사이드바 토글">
+        📖
+    </button>
+    
+    <div class="container">
+        <div class="header">
+            <button class="menu-toggle" onclick="toggleAllSections()" title="메뉴 토글">
+                ☰
+            </button>
+            <h1>🎤 실시간 음성 클라이언트</h1>
+            <p>웹 기반 음성 인식 및 응답 시스템</p>
+        </div>
+        
+        <div id="status" class="status disconnected">
+            <span class="indicator red"></span>
+            <span id="status-text">연결 중...</span>
+        </div>
+        
+        <div id="processing-indicator" class="processing-indicator">
+            <span>🎤 음성 처리 중...</span>
+        </div>
+        
+        <div id="server-info" class="server-info" style="display: none;">
+            <h4>📡 서버 정보</h4>
+            <div class="info-item">
+                <span class="info-label">서버 URL:</span>
+                <span id="server-url-display">-</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">연결 상태:</span>
+                <span id="server-connection-status">-</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">마지막 응답:</span>
+                <span id="last-response-time">-</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn btn-start" onclick="startSession()">
+                🚀 세션 시작
+            </button>
+            <button id="stop-btn" class="btn btn-stop" onclick="stopSession()" disabled>
+                ⏹️ 세션 중지
+            </button>
+        </div>
+        
+        <div class="section-header" onclick="toggleSection('config-section')">
+            <h3>⚙️ 서버 설정</h3>
+            <span class="section-arrow">▼</span>
+        </div>
+        <div id="config-section" class="config-section collapsible-section">
+            <input type="text" id="server-url" class="config-input" placeholder="서버 URL (예: http://localhost:8001)">
+            <button class="btn" onclick="updateConfig()" style="background: #007bff; color: white;">
+                설정 저장
+            </button>
+            <button class="btn" onclick="testTTS()" style="background: #28a745; color: white;">
+                🔊 TTS 테스트
+            </button>
+        </div>
+        
+        <div class="section-header" onclick="toggleSection('log-section')">
+            <h3>📋 실시간 로그</h3>
+            <span class="section-arrow">▼</span>
+        </div>
+        <div id="log-section" class="log-section collapsible-section">
+            <div id="logs"></div>
+        </div>
+    </div>
+    
+    <!-- 메뉴 사이드바 -->
+    <div id="sidebar" class="sidebar collapsed">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" onclick="toggleSidebar()" title="사이드바 닫기">
+                ✕
+            </button>
+            <h2>🍽️ 식당 메뉴</h2>
+            <p>맛있는 음식을 선택하세요</p>
+        </div>
+        <div class="sidebar-content">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <h3 id="sidebar-menu-title">📋 메뉴</h3>
+                <div id="sidebar-menu-content" class="sidebar-menu-content">
+                    <div class="sidebar-menu-empty">
+                        아직 메뉴가 로드되지 않았습니다.<br>
+                        음성으로 메뉴를 요청해보세요!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 웹소켓 연결 설정
+        const socket = io({
+            transports: ['websocket', 'polling'],
+            timeout: 5000,
+            reconnection: true,
+            reconnectionDelay: 1000,
+            reconnectionAttempts: 5
+        });
+        
+        let isRunning = false;
+        let socketConnected = false;
+        let connectionTimeout = null;
+        
+        // 소켓 이벤트 리스너
+        socket.on('connect', function() {
+            console.log('✅ 웹소켓 연결 성공');
+            socketConnected = true;
+            clearTimeout(connectionTimeout);
+            addLog('✅ 웹소켓 연결됨', 'info');
+            
+            // 연결 상태 업데이트
+            updateConnectionStatus(true);
+            
+            // 설정 로드
+            setTimeout(loadConfig, 100);
+        });
+        
+        socket.on('disconnect', function(reason) {
+            console.log('❌ 웹소켓 연결 해제:', reason);
+            socketConnected = false;
+            addLog('❌ 웹소켓 연결 해제됨: ' + reason, 'error');
+            
+            // 연결 상태 업데이트
+            updateConnectionStatus(false);
+        });
+        
+        socket.on('connect_error', function(error) {
+            console.error('❌ 웹소켓 연결 오류:', error);
+            socketConnected = false;
+            addLog('❌ 웹소켓 연결 실패: ' + error.message, 'error');
+            
+            // 연결 상태 업데이트
+            updateConnectionStatus(false);
+        });
+        
+        socket.on('reconnect', function(attemptNumber) {
+            console.log('🔄 웹소켓 재연결 성공:', attemptNumber);
+            addLog('🔄 웹소켓 재연결됨', 'info');
+        });
+        
+        socket.on('reconnect_error', function(error) {
+            console.error('❌ 웹소켓 재연결 실패:', error);
+            addLog('❌ 웹소켓 재연결 실패', 'error');
+        });
+        
+        socket.on('status', function(data) {
+            updateStatus(data.message, data.running);
+            addLog(data.message, 'info');
+        });
+        
+        socket.on('error', function(data) {
+            addLog('❌ ' + data.message, 'error');
+            updateButtons(false);
+        });
+        
+        socket.on('warning', function(data) {
+            addLog('⚠️ ' + data.message, 'warning');
+        });
+        
+        socket.on('transcription', function(data) {
+            let logText = '🎯 인식: ' + data.text;
+            if (data.confidence) {
+                logText += ` (신뢰도: ${(data.confidence * 100).toFixed(1)}%)`;
+            }
+            addLog(logText, 'transcription');
+            
+            // 신뢰도 바 표시
+            if (data.confidence) {
+                addConfidenceBar(data.confidence);
+            }
+        });
+        
+        socket.on('response', function(data) {
+            let responseText = data.text || JSON.stringify(data);
+            addLog('💬 응답: ' + responseText, 'response');
+            updateLastResponseTime();
+            
+            // UI 액션 처리
+            if (data.ui_actions && data.ui_actions.length > 0) {
+                processUIActions(data.ui_actions);
+            }
+        });
+        
+        socket.on('ui_actions', function(data) {
+            console.log('🎯 UI 액션 수신:', data);
+            processUIActions(data);
+        });
+        
+        socket.on('audio', function(data) {
+            addLog('🔊 TTS 오디오 수신', 'audio');
+            playTTSAudio(data);
+        });
+        
+        socket.on('server_info', function(data) {
+            updateServerInfo(data);
+        });
+        
+        socket.on('processing_status', function(data) {
+            updateProcessingStatus(data);
+        });
+        
+        // 메뉴 토글 함수들
+        let allSectionsCollapsed = false;
+        let sidebarCollapsed = true;
+        
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const arrow = section.previousElementSibling.querySelector('.section-arrow');
+            
+            if (section.classList.contains('collapsed')) {
+                section.classList.remove('collapsed');
+                arrow.classList.remove('collapsed');
+                arrow.textContent = '▼';
+            } else {
+                section.classList.add('collapsed');
+                arrow.classList.add('collapsed');
+                arrow.textContent = '▶';
+            }
+        }
+        
+        function toggleAllSections() {
+            const sections = ['config-section', 'log-section'];
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const arrow = section.previousElementSibling.querySelector('.section-arrow');
+                
+                if (allSectionsCollapsed) {
+                    section.classList.remove('collapsed');
+                    arrow.classList.remove('collapsed');
+                    arrow.textContent = '▼';
+                } else {
+                    section.classList.add('collapsed');
+                    arrow.classList.add('collapsed');
+                    arrow.textContent = '▶';
+                }
+            });
+            
+            allSectionsCollapsed = !allSectionsCollapsed;
+            menuToggle.textContent = allSectionsCollapsed ? '☱' : '☰';
+        }
+        
+        // 사이드바 토글 함수
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const toggleBtn = document.querySelector('.sidebar-menu-toggle-btn');
+            
+            if (sidebarCollapsed) {
+                sidebar.classList.remove('collapsed');
+                toggleBtn.textContent = '📋';
+                sidebarCollapsed = false;
+            } else {
+                sidebar.classList.add('collapsed');
+                toggleBtn.textContent = '📖';
+                sidebarCollapsed = true;
+            }
+        }
+        
+        // 메뉴 표시 처리 (사이드바)
+        function handleShowMenu(data) {
+            try {
+                console.log('📋 메뉴 표시:', data);
+                
+                const sidebarMenuContentEl = document.getElementById('sidebar-menu-content');
+                const sidebarMenuTitleEl = document.getElementById('sidebar-menu-title');
+                const sidebar = document.getElementById('sidebar');
+                
+                if (!data.menu_options || data.menu_options.length === 0) {
+                    sidebarMenuContentEl.innerHTML = `
+                        <div class="sidebar-menu-empty">
+                            메뉴를 찾을 수 없습니다.<br>
+                            다시 시도해주세요.
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // 메뉴 제목 설정
+                let title = '📋 메뉴';
+                if (data.category) {
+                    title += ` - ${data.category}`;
+                }
+                sidebarMenuTitleEl.textContent = title;
+                
+                // 메뉴 항목들 표시
+                let menuHtml = '';
+                data.menu_options.forEach(option => {
+                    if (option.available !== false) {  // 사용 가능한 메뉴만 표시
+                        menuHtml += `
+                            <div class="sidebar-menu-item" onclick="selectMenuItem('${option.option_id}')">
+                                <div class="item-name">${option.display_text || option.name}</div>
+                                ${option.description ? `<div class="item-description">${option.description}</div>` : ''}
+                                <div class="item-footer">
+                                    ${option.category ? `<div class="item-category">${option.category}</div>` : '<div></div>'}
+                                    <div class="item-price">${formatPrice(option.price)}</div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                });
+                
+                sidebarMenuContentEl.innerHTML = menuHtml;
+                
+                // 사이드바가 닫혀있으면 자동으로 열기
+                if (sidebarCollapsed) {
+                    toggleSidebar();
+                }
+                
+                addLog(`📋 메뉴 사이드바에 표시됨 (${data.menu_options.length}개 항목)`, 'info');
+                
+            } catch (error) {
+                console.error('메뉴 표시 오류:', error);
+                addLog('❌ 메뉴 표시 실패: ' + error.message, 'error');
+            }
+        }
+        
+        // 메뉴 항목 선택
+        function selectMenuItem(optionId) {
+            console.log('메뉴 선택:', optionId);
+            addLog(`🍔 메뉴 선택: ${optionId}`, 'info');
+            // 실제로는 음성으로 해당 메뉴를 말하도록 안내하거나
+            // 서버에 선택 정보를 전송할 수 있음
+        }
+        
+        // 가격 포맷팅 함수
+        function formatPrice(price) {
+            if (typeof price !== 'number') return '가격 미정';
+            return price.toLocaleString() + '원';
+        }
+        
+        // UI 액션 처리 함수
+        function processUIActions(actions) {
+            try {
+                console.log('🎯 UI 액션 처리 시작:', actions);
+                
+                // 우선순위별로 정렬
+                actions.sort((a, b) => (b.priority || 0) - (a.priority || 0));
+                
+                actions.forEach((action, index) => {
+                    console.log(`${index + 1}. ${action.action_type} 처리 중...`);
+                    
+                    switch (action.action_type) {
+                        case 'show_menu':
+                            handleShowMenu(action.data);
+                            break;
+                        case 'show_payment':
+                            console.log('💳 결제 화면 표시:', action.data);
+                            addLog('💳 결제 화면이 표시되었습니다', 'info');
+                            break;
+                        case 'show_confirmation':
+                            console.log('❓ 확인 요청:', action.data);
+                            addLog(`❓ 확인: ${action.data.message || '확인이 필요합니다'}`, 'warning');
+                            break;
+                        case 'show_error':
+                            console.log('❌ 오류 표시:', action.data);
+                            addLog(`❌ 오류: ${action.data.error_message || '오류가 발생했습니다'}`, 'error');
+                            break;
+                        default:
+                            console.log('알 수 없는 액션 타입:', action.action_type);
+                    }
+                });
+                
+                addLog(`🎯 ${actions.length}개 UI 액션 처리 완료`, 'info');
+                
+            } catch (error) {
+                console.error('UI 액션 처리 오류:', error);
+                addLog('❌ UI 액션 처리 실패: ' + error.message, 'error');
+            }
+        }
+        
+        // 설정 로드 함수
+        function loadConfig() {
+            fetch('/config')
+                .then(response => response.json())
+                .then(config => {
+                    document.getElementById('server-url').value = config.server.url;
+                    addLog('현재 설정 로드됨', 'info');
+                })
+                .catch(error => {
+                    addLog('설정 로드 실패: ' + error, 'error');
+                });
+        }
+        
+        // 함수들
+        function startSession() {
+            socket.emit('start_session');
+            updateButtons(true);
+            addLog('세션 시작 요청...', 'info');
+        }
+        
+        function stopSession() {
+            socket.emit('stop_session');
+            updateButtons(false);
+            addLog('세션 중지 요청...', 'info');
+        }
+        
+        function updateStatus(message, running) {
+            const statusEl = document.getElementById('status');
+            const statusText = document.getElementById('status-text');
+            const indicator = statusEl.querySelector('.indicator');
+            
+            statusText.textContent = message;
+            isRunning = running;
+            
+            if (running) {
+                statusEl.className = 'status connected';
+                indicator.className = 'indicator green';
+            } else {
+                statusEl.className = 'status disconnected';
+                indicator.className = 'indicator red';
+            }
+            
+            updateButtons(running);
+        }
+        
+        function updateButtons(running) {
+            const startBtn = document.getElementById('start-btn');
+            const stopBtn = document.getElementById('stop-btn');
+            
+            startBtn.disabled = running;
+            stopBtn.disabled = !running;
+        }
+        
+        function addLog(message, type) {
+            const logsEl = document.getElementById('logs');
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry log-${type}`;
+            logEntry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            
+            logsEl.appendChild(logEntry);
+            logsEl.scrollTop = logsEl.scrollHeight;
+            
+            // 로그 개수 제한 (최대 100개)
+            while (logsEl.children.length > 100) {
+                logsEl.removeChild(logsEl.firstChild);
+            }
+        }
+        
+        function updateConfig() {
+            const serverUrl = document.getElementById('server-url').value;
+            if (!serverUrl) {
+                addLog('서버 URL을 입력해주세요', 'error');
+                return;
+            }
+            
+            fetch('/config', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    server: { url: serverUrl }
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addLog('설정이 저장되었습니다', 'info');
+                } else {
+                    addLog('설정 저장 실패: ' + data.message, 'error');
+                }
+            })
+            .catch(error => {
+                addLog('설정 저장 중 오류: ' + error, 'error');
+            });
+        }
+        
+        function playTTSAudio(audioData) {
+            try {
+                console.log('TTS 오디오 데이터:', audioData);
+                
+                const audioPlayer = document.createElement('div');
+                audioPlayer.className = 'audio-player';
+                
+                // 테스트 여부 확인
+                const testLabel = audioData.test ? ' (테스트)' : '';
+                
+                audioPlayer.innerHTML = `
+                    <div>🔊 TTS 음성${testLabel} (${new Date().toLocaleTimeString()})</div>
+                    <div style="font-size: 12px; color: #6c757d;">
+                        파일: ${audioData.filename || audioData.path} 
+                        ${audioData.size ? `(${Math.round(audioData.size/1024)}KB)` : ''}
+                    </div>
+                    <audio controls preload="auto" style="width: 100%; margin-top: 5px;">
+                        <source src="${audioData.url}" type="audio/wav">
+                        <source src="${audioData.url}" type="audio/mpeg">
+                        <source src="${audioData.url}" type="audio/mp3">
+                        브라우저가 오디오를 지원하지 않습니다.
+                    </audio>
+                    <div style="margin-top: 5px;">
+                        <button onclick="playAudio(this)" style="padding: 5px 10px; margin-right: 5px;">▶️ 재생</button>
+                        <button onclick="downloadAudio('${audioData.url}', '${audioData.filename || 'audio.wav}')" 
+                                style="padding: 5px 10px;">💾 다운로드</button>
+                    </div>
+                `;
+                
+                const logsEl = document.getElementById('logs');
+                logsEl.appendChild(audioPlayer);
+                logsEl.scrollTop = logsEl.scrollHeight;
+                
+                // 오디오 요소 가져오기
+                const audio = audioPlayer.querySelector('audio');
+                
+                // 오디오 로드 이벤트
+                audio.addEventListener('loadstart', function() {
+                    console.log('오디오 로드 시작:', audioData.url);
+                });
+                
+                audio.addEventListener('canplay', function() {
+                    console.log('오디오 재생 준비 완료');
+                    addLog('🔊 TTS 오디오 재생 준비 완료', 'info');
+                    
+                    // 자동 재생 시도 (사용자 상호작용 후에만 가능)
+                    if (!audioData.test) {
+                        tryAutoPlay(audio);
+                    }
+                });
+                
+                audio.addEventListener('error', function(e) {
+                    console.error('오디오 로드 오류:', e);
+                    addLog('❌ 오디오 재생 실패: ' + audioData.url, 'error');
+                });
+                
+                audio.addEventListener('play', function() {
+                    addLog('▶️ TTS 오디오 재생 시작', 'info');
+                });
+                
+                audio.addEventListener('ended', function() {
+                    addLog('⏹️ TTS 오디오 재생 완료', 'info');
+                });
+                
+                // 오디오 로드 시작
+                audio.load();
+                
+            } catch (error) {
+                console.error('TTS 오디오 재생 오류:', error);
+                addLog('❌ TTS 오디오 재생 오류: ' + error.message, 'error');
+            }
+        }
+        
+        function tryAutoPlay(audio) {
+            // 자동 재생 시도 (브라우저 정책에 따라 실패할 수 있음)
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    console.log('자동 재생 성공');
+                }).catch(error => {
+                    console.log('자동 재생 실패 (사용자 상호작용 필요):', error);
+                    addLog('🔇 자동 재생 실패 - 수동으로 재생 버튼을 클릭하세요', 'warning');
+                });
+            }
+        }
+        
+        function playAudio(button) {
+            const audioPlayer = button.closest('.audio-player');
+            const audio = audioPlayer.querySelector('audio');
+            
+            if (audio.paused) {
+                audio.play().then(() => {
+                    button.textContent = '⏸️ 일시정지';
+                }).catch(error => {
+                    addLog('재생 실패: ' + error.message, 'error');
+                });
+            } else {
+                audio.pause();
+                button.textContent = '▶️ 재생';
+            }
+        }
+        
+        function downloadAudio(url, filename) {
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            addLog('💾 오디오 다운로드: ' + filename, 'info');
+        }
+        
+        function testTTS() {
+            socket.emit('test_tts');
+            addLog('🧪 TTS 테스트 요청 전송', 'info');
+        }
+        
+        function updateServerInfo(data) {
+            const serverInfoEl = document.getElementById('server-info');
+            const serverUrlEl = document.getElementById('server-url-display');
+            const connectionStatusEl = document.getElementById('server-connection-status');
+            
+            serverInfoEl.style.display = 'block';
+            serverUrlEl.textContent = data.server_url || '-';
+            connectionStatusEl.textContent = data.connected ? '✅ 연결됨' : '❌ 연결 안됨';
+            connectionStatusEl.style.color = data.connected ? '#28a745' : '#dc3545';
+        }
+        
+        function updateProcessingStatus(data) {
+            const processingEl = document.getElementById('processing-indicator');
+            if (data.processing) {
+                processingEl.classList.add('active');
+                processingEl.innerHTML = `<span>🎤 ${data.message || '음성 처리 중...'}</span>`;
+            } else {
+                processingEl.classList.remove('active');
+            }
+        }
+        
+        function updateLastResponseTime() {
+            const lastResponseEl = document.getElementById('last-response-time');
+            lastResponseEl.textContent = new Date().toLocaleTimeString();
+        }
+        
+        function addConfidenceBar(confidence) {
+            const logsEl = document.getElementById('logs');
+            const confidenceBar = document.createElement('div');
+            confidenceBar.className = 'log-entry';
+            confidenceBar.innerHTML = `
+                <div>신뢰도: ${(confidence * 100).toFixed(1)}%</div>
+                <div class="confidence-bar">
+                    <div class="confidence-fill" style="width: ${confidence * 100}%"></div>
+                </div>
+            `;
+            logsEl.appendChild(confidenceBar);
+            logsEl.scrollTop = logsEl.scrollHeight;
+        }
+        
+        function updateConnectionStatus(connected) {
+            const statusEl = document.getElementById('status');
+            const statusText = document.getElementById('status-text');
+            const indicator = statusEl.querySelector('.indicator');
+            
+            if (connected) {
+                statusEl.className = 'status connected';
+                indicator.className = 'indicator green';
+                statusText.textContent = '웹소켓 연결됨';
+            } else {
+                statusEl.className = 'status disconnected';
+                indicator.className = 'indicator red';
+                statusText.textContent = '연결 중...';
+                
+                // 재연결 시도
+                setTimeout(() => {
+                    if (!socketConnected) {
+                        addLog('🔄 재연결 시도 중...', 'info');
+                    }
+                }, 2000);
+            }
+        }
+        
+        function checkServerStatus() {
+            if (!socketConnected) {
+                console.log('웹소켓 연결되지 않음 - 서버 상태 확인 건너뜀');
+                return;
+            }
+            
+            fetch('/server-status')
+                .then(response => response.json())
+                .then(data => {
+                    updateServerInfo(data);
+                })
+                .catch(error => {
+                    console.error('서버 상태 확인 실패:', error);
+                });
+        }
+        
+        // 페이지 로드 시 초기화
+        function initializePage() {
+            console.log('📱 페이지 초기화 시작');
+            
+            // 연결 타임아웃 설정
+            connectionTimeout = setTimeout(() => {
+                if (!socketConnected) {
+                    console.warn('⚠️ 웹소켓 연결 시간 초과');
+                    addLog('⚠️ 웹소켓 연결 시간 초과 - 페이지를 새로고침해주세요', 'warning');
+                    updateConnectionStatus(false);
+                }
+            }, 10000); // 10초 타임아웃
+            
+            // 웹소켓이 연결되지 않은 경우 설정만 먼저 로드
+            if (!socketConnected) {
+                setTimeout(() => {
+                    if (!socketConnected) {
+                        console.log('웹소켓 연결 대기 중... 설정 먼저 로드');
+                        loadConfig();
+                    }
+                }, 2000);
+            }
+        }
+        
+        // 페이지 로드 완료 시 초기화
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('📱 DOM 로드 완료');
+            initializePage();
+        });
+        
+        // 주기적으로 서버 상태 확인 (웹소켓 연결된 경우만)
+        setInterval(() => {
+            if (socketConnected) {
+                checkServerStatus();
+            }
+        }, 10000); // 10초마다
+    </script>
+</body>
+</html>
