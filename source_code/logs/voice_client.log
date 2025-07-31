@@ -1,0 +1,82 @@
+2025-07-30 21:32:10 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: fa65d8fa-c04f-4d2e-8e52-a6e865f4674f, File Size: 32044 bytes, Time: 2025-07-30 21:32:10.557208
+2025-07-30 21:32:10 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: fa65d8fa-c04f-4d2e-8e52-a6e865f4674f
+2025-07-30 21:32:11 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: fa65d8fa-c04f-4d2e-8e52-a6e865f4674f
+2025-07-30 21:32:13 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: fa65d8fa-c04f-4d2e-8e52-a6e865f4674f
+2025-07-30 21:32:13 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: fa65d8fa-c04f-4d2e-8e52-a6e865f4674f, Type: TIMEOUT_ERROR, Message: 요청 타임아웃 (시도 3): 요청 타임아웃, Time: 2025-07-30 21:32:13.580878
+2025-07-30 21:32:13 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: f6575b0f-34d2-4aa5-bbe8-494e1c4789d9, File Size: 32044 bytes, Time: 2025-07-30 21:32:13.582930
+2025-07-30 21:32:13 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: f6575b0f-34d2-4aa5-bbe8-494e1c4789d9
+2025-07-30 21:32:14 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: f6575b0f-34d2-4aa5-bbe8-494e1c4789d9
+2025-07-30 21:32:16 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: f6575b0f-34d2-4aa5-bbe8-494e1c4789d9
+2025-07-30 21:32:16 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: f6575b0f-34d2-4aa5-bbe8-494e1c4789d9, Type: CONNECTION_ERROR, Message: 연결 오류 (시도 3): 연결 실패, Time: 2025-07-30 21:32:16.616916
+2025-07-30 21:33:29 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: e8937181-c853-473d-aff3-a54f76a538bc, File Size: 32044 bytes, Time: 2025-07-30 21:33:29.145608
+2025-07-30 21:33:29 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: e8937181-c853-473d-aff3-a54f76a538bc
+2025-07-30 21:33:30 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: e8937181-c853-473d-aff3-a54f76a538bc
+2025-07-30 21:33:32 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: e8937181-c853-473d-aff3-a54f76a538bc
+2025-07-30 21:33:32 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: e8937181-c853-473d-aff3-a54f76a538bc, Type: TIMEOUT_ERROR, Message: 요청 타임아웃 (시도 3): 요청 타임아웃, Time: 2025-07-30 21:33:32.156828
+2025-07-30 21:33:32 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 194dabe1-74df-4f81-8eee-1c3ba2134416, File Size: 32044 bytes, Time: 2025-07-30 21:33:32.158640
+2025-07-30 21:33:32 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 194dabe1-74df-4f81-8eee-1c3ba2134416
+2025-07-30 21:33:33 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 194dabe1-74df-4f81-8eee-1c3ba2134416
+2025-07-30 21:33:35 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 194dabe1-74df-4f81-8eee-1c3ba2134416
+2025-07-30 21:33:35 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 194dabe1-74df-4f81-8eee-1c3ba2134416, Type: CONNECTION_ERROR, Message: 연결 오류 (시도 3): 연결 실패, Time: 2025-07-30 21:33:35.187637
+2025-07-30 21:33:45 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 808d64d8-d0d2-44d9-a3a3-29865e7e8889, File Size: 32044 bytes, Time: 2025-07-30 21:33:45.170933
+2025-07-30 21:33:45 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 808d64d8-d0d2-44d9-a3a3-29865e7e8889
+2025-07-30 21:33:45 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 808d64d8-d0d2-44d9-a3a3-29865e7e8889
+2025-07-30 21:33:45 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 808d64d8-d0d2-44d9-a3a3-29865e7e8889
+2025-07-30 21:33:45 - voice_client_monitoring - INFO - CLIENT_UPLOAD_COMPLETE - ID: 808d64d8-d0d2-44d9-a3a3-29865e7e8889, Upload Time: 0.001s
+2025-07-30 21:33:45 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 808d64d8-d0d2-44d9-a3a3-29865e7e8889, Type: UNKNOWN_ERROR, Message: 예상치 못한 오류: object of type 'Mock' has no len(), Time: 2025-07-30 21:33:45.477712
+2025-07-30 21:53:19 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 22e5ed3a-b182-44a9-a4e8-79f02c68efc8, File Size: 32044 bytes, Time: 2025-07-30 21:53:19.645847
+2025-07-30 21:53:19 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 22e5ed3a-b182-44a9-a4e8-79f02c68efc8
+2025-07-30 21:53:20 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 22e5ed3a-b182-44a9-a4e8-79f02c68efc8
+2025-07-30 21:53:22 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 22e5ed3a-b182-44a9-a4e8-79f02c68efc8
+2025-07-30 21:53:22 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 22e5ed3a-b182-44a9-a4e8-79f02c68efc8, Type: TIMEOUT_ERROR, Message: 요청 타임아웃 (시도 3): 요청 타임아웃, Time: 2025-07-30 21:53:22.724140
+2025-07-30 21:53:22 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 28a690e6-b455-495e-b02c-23a83ac7c246, File Size: 32044 bytes, Time: 2025-07-30 21:53:22.730614
+2025-07-30 21:53:22 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 28a690e6-b455-495e-b02c-23a83ac7c246
+2025-07-30 21:53:23 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 28a690e6-b455-495e-b02c-23a83ac7c246
+2025-07-30 21:53:25 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 28a690e6-b455-495e-b02c-23a83ac7c246
+2025-07-30 21:53:25 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 28a690e6-b455-495e-b02c-23a83ac7c246, Type: CONNECTION_ERROR, Message: 연결 오류 (시도 3): 연결 실패, Time: 2025-07-30 21:53:25.754347
+2025-07-30 21:53:34 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 84efad31-6232-405c-8124-6a938e1bf8cd, File Size: 32044 bytes, Time: 2025-07-30 21:53:34.926336
+2025-07-30 21:53:34 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 84efad31-6232-405c-8124-6a938e1bf8cd
+2025-07-30 21:53:35 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 84efad31-6232-405c-8124-6a938e1bf8cd
+2025-07-30 21:53:35 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 84efad31-6232-405c-8124-6a938e1bf8cd
+2025-07-30 21:53:35 - voice_client_monitoring - INFO - CLIENT_UPLOAD_COMPLETE - ID: 84efad31-6232-405c-8124-6a938e1bf8cd, Upload Time: 0.001s
+2025-07-30 21:53:35 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 84efad31-6232-405c-8124-6a938e1bf8cd, Type: UNKNOWN_ERROR, Message: 예상치 못한 오류: object of type 'Mock' has no len(), Time: 2025-07-30 21:53:35.248919
+2025-07-30 22:00:01 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 3fc12967-2489-4138-855b-6a25311df58b, File Size: 32044 bytes, Time: 2025-07-30 22:00:01.522203
+2025-07-30 22:00:01 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 3fc12967-2489-4138-855b-6a25311df58b
+2025-07-30 22:00:02 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 3fc12967-2489-4138-855b-6a25311df58b
+2025-07-30 22:00:04 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 3fc12967-2489-4138-855b-6a25311df58b
+2025-07-30 22:00:05 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 3fc12967-2489-4138-855b-6a25311df58b, Type: TIMEOUT_ERROR, Message: 요청 타임아웃 (시도 3): 요청 타임아웃, Time: 2025-07-30 22:00:05.325449
+2025-07-30 22:00:05 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 9efa5c98-e4c7-4b3b-87dc-10f52de8a60b, File Size: 32044 bytes, Time: 2025-07-30 22:00:05.336686
+2025-07-30 22:00:05 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 9efa5c98-e4c7-4b3b-87dc-10f52de8a60b
+2025-07-30 22:00:06 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 9efa5c98-e4c7-4b3b-87dc-10f52de8a60b
+2025-07-30 22:00:08 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 9efa5c98-e4c7-4b3b-87dc-10f52de8a60b
+2025-07-30 22:00:08 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 9efa5c98-e4c7-4b3b-87dc-10f52de8a60b, Type: CONNECTION_ERROR, Message: 연결 오류 (시도 3): 연결 실패, Time: 2025-07-30 22:00:08.980142
+2025-07-30 22:00:49 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: c9bbac5b-139e-4f2f-92b2-df65caf7f3ef, File Size: 32044 bytes, Time: 2025-07-30 22:00:49.461735
+2025-07-30 22:00:49 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: c9bbac5b-139e-4f2f-92b2-df65caf7f3ef
+2025-07-30 22:00:49 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: c9bbac5b-139e-4f2f-92b2-df65caf7f3ef
+2025-07-30 22:00:49 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: c9bbac5b-139e-4f2f-92b2-df65caf7f3ef
+2025-07-30 22:00:49 - voice_client_monitoring - INFO - CLIENT_UPLOAD_COMPLETE - ID: c9bbac5b-139e-4f2f-92b2-df65caf7f3ef, Upload Time: 0.001s
+2025-07-30 22:00:49 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: c9bbac5b-139e-4f2f-92b2-df65caf7f3ef, Type: UNKNOWN_ERROR, Message: 예상치 못한 오류: object of type 'Mock' has no len(), Time: 2025-07-30 22:00:49.773432
+2025-07-30 22:02:51 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 80d9dc74-259f-4191-b818-2c49d41c30ce, File Size: 32044 bytes, Time: 2025-07-30 22:02:51.162372
+2025-07-30 22:02:51 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 80d9dc74-259f-4191-b818-2c49d41c30ce
+2025-07-30 22:02:51 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 80d9dc74-259f-4191-b818-2c49d41c30ce
+2025-07-30 22:02:51 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 80d9dc74-259f-4191-b818-2c49d41c30ce
+2025-07-30 22:02:51 - voice_client_monitoring - INFO - CLIENT_UPLOAD_COMPLETE - ID: 80d9dc74-259f-4191-b818-2c49d41c30ce, Upload Time: 0.001s
+2025-07-30 22:02:51 - voice_client_monitoring - INFO - CLIENT_RESPONSE_RECEIVED - ID: 80d9dc74-259f-4191-b818-2c49d41c30ce, Waiting Time: 0.002s, Server Processing: 1.000s, Response Size: 36 bytes
+2025-07-30 22:02:51 - voice_client_monitoring - INFO - CLIENT_REQUEST_COMPLETE - ID: 80d9dc74-259f-4191-b818-2c49d41c30ce, Total Time: 0.309s, Upload: 0.001s, Waiting: 0.002s
+2025-07-30 22:03:09 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: 4a739102-e4f1-49a9-bc54-4f2fecf4fbf5, File Size: 32044 bytes, Time: 2025-07-30 22:03:09.113966
+2025-07-30 22:03:09 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 4a739102-e4f1-49a9-bc54-4f2fecf4fbf5
+2025-07-30 22:03:10 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 4a739102-e4f1-49a9-bc54-4f2fecf4fbf5
+2025-07-30 22:03:12 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: 4a739102-e4f1-49a9-bc54-4f2fecf4fbf5
+2025-07-30 22:03:12 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: 4a739102-e4f1-49a9-bc54-4f2fecf4fbf5, Type: TIMEOUT_ERROR, Message: 요청 타임아웃 (시도 3): 요청 타임아웃, Time: 2025-07-30 22:03:12.125914
+2025-07-30 22:03:12 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: de825a0e-540b-47e3-930f-ee03a8fc92d9, File Size: 32044 bytes, Time: 2025-07-30 22:03:12.127176
+2025-07-30 22:03:12 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: de825a0e-540b-47e3-930f-ee03a8fc92d9
+2025-07-30 22:03:13 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: de825a0e-540b-47e3-930f-ee03a8fc92d9
+2025-07-30 22:03:15 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: de825a0e-540b-47e3-930f-ee03a8fc92d9
+2025-07-30 22:03:15 - voice_client_monitoring - ERROR - CLIENT_ERROR - ID: de825a0e-540b-47e3-930f-ee03a8fc92d9, Type: CONNECTION_ERROR, Message: 연결 오류 (시도 3): 연결 실패, Time: 2025-07-30 22:03:15.144366
+2025-07-30 22:03:31 - voice_client_monitoring - INFO - CLIENT_REQUEST_START - ID: beb061f9-ef7a-4f68-a465-dec7f9cbd5a6, File Size: 32044 bytes, Time: 2025-07-30 22:03:31.796632
+2025-07-30 22:03:31 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: beb061f9-ef7a-4f68-a465-dec7f9cbd5a6
+2025-07-30 22:03:31 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: beb061f9-ef7a-4f68-a465-dec7f9cbd5a6
+2025-07-30 22:03:32 - voice_client_monitoring - INFO - CLIENT_UPLOAD_START - ID: beb061f9-ef7a-4f68-a465-dec7f9cbd5a6
+2025-07-30 22:03:32 - voice_client_monitoring - INFO - CLIENT_UPLOAD_COMPLETE - ID: beb061f9-ef7a-4f68-a465-dec7f9cbd5a6, Upload Time: 0.010s
+2025-07-30 22:03:32 - voice_client_monitoring - INFO - CLIENT_RESPONSE_RECEIVED - ID: beb061f9-ef7a-4f68-a465-dec7f9cbd5a6, Waiting Time: 0.001s, Server Processing: 1.000s, Response Size: 36 bytes
+2025-07-30 22:03:32 - voice_client_monitoring - INFO - CLIENT_REQUEST_COMPLETE - ID: beb061f9-ef7a-4f68-a465-dec7f9cbd5a6, Total Time: 0.334s, Upload: 0.010s, Waiting: 0.001s

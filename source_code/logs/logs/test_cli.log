@@ -1,0 +1,52 @@
+2025-07-27 23:16:44 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:44 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:44 | ERROR    | src.cli.interface:process_command:481 | 명령어 'help' 실행 중 오류: 'cp949' codec can't encode character '\U0001f4d6' in position 2: illegal multibyte sequence
+2025-07-27 23:16:44 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:44 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:44 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:16:45 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:16:46 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:16:47 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:16:48 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:16:49 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:49 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:49 | ERROR    | src.cli.interface:show_menu:281 | 메뉴 표시 중 오류: 'Menu' object has no attribute 'categories'
+2025-07-27 23:16:49 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:49 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:16:49 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:14 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:14 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:14 | ERROR    | src.cli.interface:process_command:481 | 명령어 'help' 실행 중 오류: 'cp949' codec can't encode character '\U0001f4ac' in position 2: illegal multibyte sequence
+2025-07-27 23:22:14 | ERROR    | src.cli.interface:process_command:481 | 명령어 'status' 실행 중 오류: 'cp949' codec can't encode character '\U0001f527' in position 2: illegal multibyte sequence
+2025-07-27 23:22:14 | ERROR    | src.cli.interface:process_command:481 | 명령어 '도움말' 실행 중 오류: 'cp949' codec can't encode character '\U0001f4ac' in position 2: illegal multibyte sequence
+2025-07-27 23:22:14 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:14 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:14 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:22:15 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:22:16 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:22:17 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:22:18 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:22:19 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:19 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:19 | ERROR    | src.cli.interface:show_menu:281 | 메뉴 표시 중 오류: 'Menu' object has no attribute 'categories'
+2025-07-27 23:22:19 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:19 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:22:19 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:00 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:00 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:00 | ERROR    | src.cli.interface:process_command:481 | 명령어 'help' 실행 중 오류: 'cp949' codec can't encode character '\U0001f4ac' in position 2: illegal multibyte sequence
+2025-07-27 23:23:00 | ERROR    | src.cli.interface:process_command:481 | 명령어 'status' 실행 중 오류: 'cp949' codec can't encode character '\U0001f527' in position 2: illegal multibyte sequence
+2025-07-27 23:23:00 | ERROR    | src.cli.interface:process_command:481 | 명령어 '도움말' 실행 중 오류: 'cp949' codec can't encode character '\U0001f4ac' in position 2: illegal multibyte sequence
+2025-07-27 23:23:00 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:00 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:00 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:23:01 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:23:02 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:23:03 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:23:04 | ERROR    | src.main:process_text_input:198 | 텍스트 입력 처리 실패: 시스템이 초기화되지 않았습니다.
+2025-07-27 23:23:05 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:05 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:05 | ERROR    | src.cli.interface:show_menu:281 | 메뉴 표시 중 오류: 'Menu' object has no attribute 'categories'
+2025-07-27 23:23:05 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:05 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.
+2025-07-27 23:23:05 | ERROR    | src.main:initialize_system:95 | 의도 파악 모듈 초기화 실패: OpenAI API 키가 설정되지 않았습니다. config/api_keys.json을 확인하세요.

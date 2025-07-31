@@ -1,0 +1,818 @@
+2025-07-30 21:29:52 - voice_communication_monitoring - INFO - REQUEST_START - ID: d360f7dd-451f-40c7-953e-cd83d3d40b65, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:29:52.121010
+2025-07-30 21:29:52 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: d360f7dd-451f-40c7-953e-cd83d3d40b65, Type: HTTP_ERROR, Message: HTTP 500: 음성 처리 API가 초기화되지 않았습니다, Time: 2025-07-30 21:29:52.125089
+2025-07-30 21:31:58 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0b511dc6-0b51-4d83-8296-71282c26cd89, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:31:58.804570
+2025-07-30 21:31:58 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0b511dc6-0b51-4d83-8296-71282c26cd89
+2025-07-30 21:31:59 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 0b511dc6-0b51-4d83-8296-71282c26cd89, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:31:59.373788
+2025-07-30 21:32:10 - voice_communication_monitoring - INFO - REQUEST_START - ID: 35634508-feeb-4ff5-98fa-0f239728b5df, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:10.545222
+2025-07-30 21:32:10 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 35634508-feeb-4ff5-98fa-0f239728b5df
+2025-07-30 21:32:10 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 35634508-feeb-4ff5-98fa-0f239728b5df, Type: Exception, Message: 내부 처리 오류, Time: 2025-07-30 21:32:10.552985
+2025-07-30 21:32:16 - voice_communication_monitoring - INFO - REQUEST_START - ID: 17ab5429-29e3-4eb2-aa66-08fb3b0e8ba1, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:16.704449
+2025-07-30 21:32:16 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 17ab5429-29e3-4eb2-aa66-08fb3b0e8ba1
+2025-07-30 21:32:17 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 17ab5429-29e3-4eb2-aa66-08fb3b0e8ba1, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:17.290069
+2025-07-30 21:32:17 - voice_communication_monitoring - INFO - REQUEST_START - ID: 04acb2d0-7c5b-408f-b705-ffb94a5a0245, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:17.295632
+2025-07-30 21:32:17 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 04acb2d0-7c5b-408f-b705-ffb94a5a0245
+2025-07-30 21:32:17 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 04acb2d0-7c5b-408f-b705-ffb94a5a0245, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:17.840541
+2025-07-30 21:32:17 - voice_communication_monitoring - INFO - REQUEST_START - ID: f79bd56f-7e3a-4897-aff4-fa489b5d956b, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:17.844879
+2025-07-30 21:32:17 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f79bd56f-7e3a-4897-aff4-fa489b5d956b
+2025-07-30 21:32:18 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: f79bd56f-7e3a-4897-aff4-fa489b5d956b, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:18.371749
+2025-07-30 21:32:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6208aed8-2fb8-4b4f-8a97-76189afeaa12, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:18.380784
+2025-07-30 21:32:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 6208aed8-2fb8-4b4f-8a97-76189afeaa12
+2025-07-30 21:32:18 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 6208aed8-2fb8-4b4f-8a97-76189afeaa12, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:18.901181
+2025-07-30 21:32:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 396c90fb-e362-492f-adfa-3b68a022163c, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:18.904989
+2025-07-30 21:32:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 396c90fb-e362-492f-adfa-3b68a022163c
+2025-07-30 21:32:19 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 396c90fb-e362-492f-adfa-3b68a022163c, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:19.387255
+2025-07-30 21:32:31 - voice_communication_monitoring - INFO - REQUEST_START - ID: 79f88346-5454-4e7e-befa-a3afd81ffdfb, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:31.812034
+2025-07-30 21:32:31 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 79f88346-5454-4e7e-befa-a3afd81ffdfb
+2025-07-30 21:32:32 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 79f88346-5454-4e7e-befa-a3afd81ffdfb, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:32.456229
+2025-07-30 21:32:32 - voice_communication_monitoring - INFO - REQUEST_START - ID: b898033f-e308-487f-89b2-e78bf3590a8e, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:32.463926
+2025-07-30 21:32:32 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b898033f-e308-487f-89b2-e78bf3590a8e
+2025-07-30 21:32:33 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: b898033f-e308-487f-89b2-e78bf3590a8e, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:33.073283
+2025-07-30 21:32:33 - voice_communication_monitoring - INFO - REQUEST_START - ID: 81e1ca2d-f92d-46e5-b7cf-011f08c91e4b, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:33.076336
+2025-07-30 21:32:33 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 81e1ca2d-f92d-46e5-b7cf-011f08c91e4b
+2025-07-30 21:32:33 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 81e1ca2d-f92d-46e5-b7cf-011f08c91e4b, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:33.677585
+2025-07-30 21:32:33 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0d4dd80e-2982-4919-85f8-0c3a6f629df9, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:33.691130
+2025-07-30 21:32:33 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0d4dd80e-2982-4919-85f8-0c3a6f629df9
+2025-07-30 21:32:34 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 0d4dd80e-2982-4919-85f8-0c3a6f629df9, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:34.201953
+2025-07-30 21:32:34 - voice_communication_monitoring - INFO - REQUEST_START - ID: b45d21e4-2c34-421b-bd1f-ad6db6656a33, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:34.205600
+2025-07-30 21:32:34 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b45d21e4-2c34-421b-bd1f-ad6db6656a33
+2025-07-30 21:32:34 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: b45d21e4-2c34-421b-bd1f-ad6db6656a33, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:34.767553
+2025-07-30 21:32:34 - voice_communication_monitoring - INFO - REQUEST_START - ID: ae3c9d95-f6ef-4396-9e5a-40fc77152590, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:34.768903
+2025-07-30 21:32:34 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ae3c9d95-f6ef-4396-9e5a-40fc77152590
+2025-07-30 21:32:35 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: ae3c9d95-f6ef-4396-9e5a-40fc77152590, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:35.329818
+2025-07-30 21:32:35 - voice_communication_monitoring - INFO - REQUEST_START - ID: 12b14ddf-5d16-4fde-b28a-dcbec08b9516, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:35.331264
+2025-07-30 21:32:35 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 12b14ddf-5d16-4fde-b28a-dcbec08b9516
+2025-07-30 21:32:35 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 12b14ddf-5d16-4fde-b28a-dcbec08b9516, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:35.923702
+2025-07-30 21:32:35 - voice_communication_monitoring - INFO - REQUEST_START - ID: 97b056bb-8707-4137-85f2-145c52b28ce6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:35.925416
+2025-07-30 21:32:35 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 97b056bb-8707-4137-85f2-145c52b28ce6
+2025-07-30 21:32:36 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 97b056bb-8707-4137-85f2-145c52b28ce6, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:36.516994
+2025-07-30 21:32:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 24c24ca0-66f4-467a-a947-430d469aec25, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:36.518293
+2025-07-30 21:32:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 24c24ca0-66f4-467a-a947-430d469aec25
+2025-07-30 21:32:37 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 24c24ca0-66f4-467a-a947-430d469aec25, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:37.101856
+2025-07-30 21:32:37 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9798a33e-808e-427d-8f31-a397ea208449, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:32:37.102914
+2025-07-30 21:32:37 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9798a33e-808e-427d-8f31-a397ea208449
+2025-07-30 21:32:37 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 9798a33e-808e-427d-8f31-a397ea208449, Type: AttributeError, Message: 'ServerResponse' object has no attribute 'model_dump_json', Time: 2025-07-30 21:32:37.674339
+2025-07-30 21:33:07 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8a361f9f-6713-428c-84a4-910a69840dca, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:07.839278
+2025-07-30 21:33:07 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8a361f9f-6713-428c-84a4-910a69840dca
+2025-07-30 21:33:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8a361f9f-6713-428c-84a4-910a69840dca, Processing Time: 0.539s, Total Time: 0.550s, Response Size: 391 bytes
+2025-07-30 21:33:08 - voice_communication_monitoring - INFO - REQUEST_START - ID: 388d8149-48a4-45f6-ba60-3407b628040b, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:08.396251
+2025-07-30 21:33:08 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 388d8149-48a4-45f6-ba60-3407b628040b
+2025-07-30 21:33:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 388d8149-48a4-45f6-ba60-3407b628040b, Processing Time: 0.551s, Total Time: 0.554s, Response Size: 392 bytes
+2025-07-30 21:33:08 - voice_communication_monitoring - INFO - REQUEST_START - ID: 4df9e144-5dc1-45a6-9124-920469999ca0, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:08.953761
+2025-07-30 21:33:08 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 4df9e144-5dc1-45a6-9124-920469999ca0
+2025-07-30 21:33:09 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 4df9e144-5dc1-45a6-9124-920469999ca0, Processing Time: 0.512s, Total Time: 0.515s, Response Size: 392 bytes
+2025-07-30 21:33:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: 22610bbd-1b17-4fa4-a0f0-7429ec4d96e0, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:09.470185
+2025-07-30 21:33:09 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 22610bbd-1b17-4fa4-a0f0-7429ec4d96e0
+2025-07-30 21:33:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 22610bbd-1b17-4fa4-a0f0-7429ec4d96e0, Processing Time: 0.529s, Total Time: 0.530s, Response Size: 392 bytes
+2025-07-30 21:33:10 - voice_communication_monitoring - INFO - REQUEST_START - ID: a4ad352c-8d56-4efd-aa6f-87a20d6b468d, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:10.003792
+2025-07-30 21:33:10 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a4ad352c-8d56-4efd-aa6f-87a20d6b468d
+2025-07-30 21:33:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a4ad352c-8d56-4efd-aa6f-87a20d6b468d, Processing Time: 0.611s, Total Time: 0.614s, Response Size: 392 bytes
+2025-07-30 21:33:10 - voice_communication_monitoring - INFO - REQUEST_START - ID: 2d5b457c-162e-4281-b463-f3e3faf37064, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:10.777192
+2025-07-30 21:33:11 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 2d5b457c-162e-4281-b463-f3e3faf37064
+2025-07-30 21:33:11 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 2d5b457c-162e-4281-b463-f3e3faf37064, Processing Time: 0.504s, Total Time: 0.968s, Response Size: 392 bytes
+2025-07-30 21:33:11 - voice_communication_monitoring - INFO - REQUEST_START - ID: 56e9e3cb-2611-4bff-b835-2652160c7b6a, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:11.746078
+2025-07-30 21:33:11 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 56e9e3cb-2611-4bff-b835-2652160c7b6a
+2025-07-30 21:33:12 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 56e9e3cb-2611-4bff-b835-2652160c7b6a, Processing Time: 0.616s, Total Time: 0.619s, Response Size: 392 bytes
+2025-07-30 21:33:12 - voice_communication_monitoring - INFO - REQUEST_START - ID: 936298a8-cf43-4a59-ade6-036092d8a4b1, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:12.367040
+2025-07-30 21:33:12 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 936298a8-cf43-4a59-ade6-036092d8a4b1
+2025-07-30 21:33:12 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 936298a8-cf43-4a59-ade6-036092d8a4b1, Processing Time: 0.596s, Total Time: 0.599s, Response Size: 391 bytes
+2025-07-30 21:33:12 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8d4b2b1c-1ff7-45c4-bdaa-73b01a58cffe, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:12.967437
+2025-07-30 21:33:12 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8d4b2b1c-1ff7-45c4-bdaa-73b01a58cffe
+2025-07-30 21:33:13 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8d4b2b1c-1ff7-45c4-bdaa-73b01a58cffe, Processing Time: 0.572s, Total Time: 0.574s, Response Size: 392 bytes
+2025-07-30 21:33:13 - voice_communication_monitoring - INFO - REQUEST_START - ID: 20a66ee3-9ad4-45e8-a2ca-afd7ec01dca1, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:13.542622
+2025-07-30 21:33:13 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 20a66ee3-9ad4-45e8-a2ca-afd7ec01dca1
+2025-07-30 21:33:14 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 20a66ee3-9ad4-45e8-a2ca-afd7ec01dca1, Processing Time: 0.548s, Total Time: 0.565s, Response Size: 392 bytes
+2025-07-30 21:33:26 - voice_communication_monitoring - INFO - REQUEST_START - ID: 20f639d4-e552-46b3-90f9-af8b99aa1a59, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:26.433865
+2025-07-30 21:33:26 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 20f639d4-e552-46b3-90f9-af8b99aa1a59
+2025-07-30 21:33:26 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 20f639d4-e552-46b3-90f9-af8b99aa1a59, Processing Time: 0.543s, Total Time: 0.549s, Response Size: 392 bytes
+2025-07-30 21:33:27 - voice_communication_monitoring - INFO - REQUEST_START - ID: 624ad52f-e572-4b65-92c9-e76d6a6576c5, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:27.005449
+2025-07-30 21:33:27 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 624ad52f-e572-4b65-92c9-e76d6a6576c5
+2025-07-30 21:33:27 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 624ad52f-e572-4b65-92c9-e76d6a6576c5, Processing Time: 0.542s, Total Time: 0.545s, Response Size: 392 bytes
+2025-07-30 21:33:27 - voice_communication_monitoring - INFO - REQUEST_START - ID: d1af3099-89b0-4d9c-88c7-859995f57928, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:27.555221
+2025-07-30 21:33:27 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d1af3099-89b0-4d9c-88c7-859995f57928
+2025-07-30 21:33:28 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d1af3099-89b0-4d9c-88c7-859995f57928, Processing Time: 0.549s, Total Time: 0.551s, Response Size: 392 bytes
+2025-07-30 21:33:28 - voice_communication_monitoring - INFO - REQUEST_START - ID: a026ecf2-f9d0-4f96-a8cb-15588e3823e9, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:33:28.445003
+2025-07-30 21:33:28 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a026ecf2-f9d0-4f96-a8cb-15588e3823e9
+2025-07-30 21:33:29 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a026ecf2-f9d0-4f96-a8cb-15588e3823e9, Processing Time: 0.567s, Total Time: 0.570s, Response Size: 392 bytes
+2025-07-30 21:33:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: ce3fe05e-beec-4112-8ba0-34bee4d26ce5, Client: testclient, File Size: 0 bytes, Time: 2025-07-30 21:33:29.068094
+2025-07-30 21:33:29 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: ce3fe05e-beec-4112-8ba0-34bee4d26ce5, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 21:33:29.069554
+2025-07-30 21:33:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: e70f96c2-2455-4223-94c9-3ae0c4075953, Client: testclient, File Size: 22 bytes, Time: 2025-07-30 21:33:29.073857
+2025-07-30 21:33:29 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: e70f96c2-2455-4223-94c9-3ae0c4075953, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 21:33:29.075513
+2025-07-30 21:33:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: e6fce99c-9d0b-4528-a2ca-25054332dd45, Client: testclient, File Size: 15728640 bytes, Time: 2025-07-30 21:33:29.120564
+2025-07-30 21:33:29 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: e6fce99c-9d0b-4528-a2ca-25054332dd45, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'size': '파일 크기가 10.0MB를 초과합니다'}, 'details': 'size: 파일 크기가 10.0MB를 초과합니다'}, Time: 2025-07-30 21:33:29.121133
+2025-07-30 21:33:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6d0d70e2-503e-46d7-9ed1-6cb90d7f3f0d, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:29.138509
+2025-07-30 21:33:29 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 6d0d70e2-503e-46d7-9ed1-6cb90d7f3f0d
+2025-07-30 21:33:29 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 6d0d70e2-503e-46d7-9ed1-6cb90d7f3f0d, Type: Exception, Message: 내부 처리 오류, Time: 2025-07-30 21:33:29.142738
+2025-07-30 21:33:35 - voice_communication_monitoring - INFO - REQUEST_START - ID: a5f5ce87-5a35-45f4-911d-51252b07c594, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:35.222629
+2025-07-30 21:33:35 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a5f5ce87-5a35-45f4-911d-51252b07c594
+2025-07-30 21:33:35 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a5f5ce87-5a35-45f4-911d-51252b07c594, Processing Time: 0.581s, Total Time: 0.583s, Response Size: 392 bytes
+2025-07-30 21:33:35 - voice_communication_monitoring - INFO - REQUEST_START - ID: f0e21463-1ca7-46b3-90e3-a81a8d731257, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:35.814255
+2025-07-30 21:33:35 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f0e21463-1ca7-46b3-90e3-a81a8d731257
+2025-07-30 21:33:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f0e21463-1ca7-46b3-90e3-a81a8d731257, Processing Time: 0.591s, Total Time: 0.594s, Response Size: 392 bytes
+2025-07-30 21:33:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 19736598-8e8b-4f94-9332-4ff1522a001f, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:36.414631
+2025-07-30 21:33:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 19736598-8e8b-4f94-9332-4ff1522a001f
+2025-07-30 21:33:37 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 19736598-8e8b-4f94-9332-4ff1522a001f, Processing Time: 0.600s, Total Time: 0.602s, Response Size: 392 bytes
+2025-07-30 21:33:37 - voice_communication_monitoring - INFO - REQUEST_START - ID: 03c625dc-b21f-4987-88f1-3113fc1f519d, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:37.022250
+2025-07-30 21:33:37 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 03c625dc-b21f-4987-88f1-3113fc1f519d
+2025-07-30 21:33:37 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 03c625dc-b21f-4987-88f1-3113fc1f519d, Processing Time: 0.516s, Total Time: 0.518s, Response Size: 392 bytes
+2025-07-30 21:33:37 - voice_communication_monitoring - INFO - REQUEST_START - ID: a18096ce-f2e5-4dd4-a893-015990804250, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:37.543907
+2025-07-30 21:33:37 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a18096ce-f2e5-4dd4-a893-015990804250
+2025-07-30 21:33:38 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a18096ce-f2e5-4dd4-a893-015990804250, Processing Time: 0.550s, Total Time: 0.553s, Response Size: 392 bytes
+2025-07-30 21:33:38 - voice_communication_monitoring - INFO - REQUEST_START - ID: 67bebeb9-5e8f-46f8-a409-371c61f70abb, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:38.123275
+2025-07-30 21:33:38 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 67bebeb9-5e8f-46f8-a409-371c61f70abb
+2025-07-30 21:33:38 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 67bebeb9-5e8f-46f8-a409-371c61f70abb, Processing Time: 0.547s, Total Time: 0.548s, Response Size: 391 bytes
+2025-07-30 21:33:38 - voice_communication_monitoring - INFO - REQUEST_START - ID: b9c12575-3ff8-4d5f-a2d4-21df7894d3d4, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:38.672538
+2025-07-30 21:33:38 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b9c12575-3ff8-4d5f-a2d4-21df7894d3d4
+2025-07-30 21:33:39 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: b9c12575-3ff8-4d5f-a2d4-21df7894d3d4, Processing Time: 0.592s, Total Time: 0.593s, Response Size: 392 bytes
+2025-07-30 21:33:39 - voice_communication_monitoring - INFO - REQUEST_START - ID: e5d4d8c5-2a56-4b2b-ac13-292a946f1743, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:39.269353
+2025-07-30 21:33:39 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e5d4d8c5-2a56-4b2b-ac13-292a946f1743
+2025-07-30 21:33:39 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e5d4d8c5-2a56-4b2b-ac13-292a946f1743, Processing Time: 0.562s, Total Time: 0.564s, Response Size: 392 bytes
+2025-07-30 21:33:39 - voice_communication_monitoring - INFO - REQUEST_START - ID: 880769a4-5922-473e-8727-778d6e7c55c6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:39.835333
+2025-07-30 21:33:39 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 880769a4-5922-473e-8727-778d6e7c55c6
+2025-07-30 21:33:40 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 880769a4-5922-473e-8727-778d6e7c55c6, Processing Time: 0.565s, Total Time: 0.567s, Response Size: 392 bytes
+2025-07-30 21:33:40 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0aa0a2ab-4128-48db-a0cd-dae2fe9cc6dd, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:40.404944
+2025-07-30 21:33:40 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0aa0a2ab-4128-48db-a0cd-dae2fe9cc6dd
+2025-07-30 21:33:40 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0aa0a2ab-4128-48db-a0cd-dae2fe9cc6dd, Processing Time: 0.574s, Total Time: 0.591s, Response Size: 391 bytes
+2025-07-30 21:33:40 - voice_communication_monitoring - INFO - REQUEST_START - ID: 2e9f7c8e-1a03-4704-8da1-0be3ffac5553, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:40.997390
+2025-07-30 21:33:40 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 2e9f7c8e-1a03-4704-8da1-0be3ffac5553
+2025-07-30 21:33:41 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 2e9f7c8e-1a03-4704-8da1-0be3ffac5553, Processing Time: 0.602s, Total Time: 0.604s, Response Size: 392 bytes
+2025-07-30 21:33:41 - voice_communication_monitoring - INFO - REQUEST_START - ID: 94c26684-0b4b-4443-b532-5687bb43fca2, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:41.605145
+2025-07-30 21:33:41 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 94c26684-0b4b-4443-b532-5687bb43fca2
+2025-07-30 21:33:42 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 94c26684-0b4b-4443-b532-5687bb43fca2, Processing Time: 0.593s, Total Time: 0.596s, Response Size: 392 bytes
+2025-07-30 21:33:42 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6aa29890-f767-4593-9b99-47fcffc303c6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:42.202396
+2025-07-30 21:33:42 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 6aa29890-f767-4593-9b99-47fcffc303c6
+2025-07-30 21:33:42 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 6aa29890-f767-4593-9b99-47fcffc303c6, Processing Time: 0.572s, Total Time: 0.574s, Response Size: 392 bytes
+2025-07-30 21:33:42 - voice_communication_monitoring - INFO - REQUEST_START - ID: 1bacec53-d34f-46b4-af35-00421d50d3cf, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:42.782821
+2025-07-30 21:33:42 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 1bacec53-d34f-46b4-af35-00421d50d3cf
+2025-07-30 21:33:43 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 1bacec53-d34f-46b4-af35-00421d50d3cf, Processing Time: 0.648s, Total Time: 0.652s, Response Size: 392 bytes
+2025-07-30 21:33:43 - voice_communication_monitoring - INFO - REQUEST_START - ID: 35c9f776-11ec-4a3c-983b-6b9de1739f86, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:43.949163
+2025-07-30 21:33:43 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 35c9f776-11ec-4a3c-983b-6b9de1739f86
+2025-07-30 21:33:44 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 35c9f776-11ec-4a3c-983b-6b9de1739f86, Processing Time: 0.573s, Total Time: 0.603s, Response Size: 392 bytes
+2025-07-30 21:33:44 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9c98bae9-6896-4496-863a-aa0c6ec38f85, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:33:44.576722
+2025-07-30 21:33:44 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9c98bae9-6896-4496-863a-aa0c6ec38f85
+2025-07-30 21:33:45 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9c98bae9-6896-4496-863a-aa0c6ec38f85, Processing Time: 0.563s, Total Time: 0.568s, Response Size: 391 bytes
+2025-07-30 21:53:16 - voice_communication_monitoring - INFO - REQUEST_START - ID: bddd26f3-69a3-4bca-b204-0a4ac61e1841, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:16.849505
+2025-07-30 21:53:16 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: bddd26f3-69a3-4bca-b204-0a4ac61e1841
+2025-07-30 21:53:17 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: bddd26f3-69a3-4bca-b204-0a4ac61e1841, Processing Time: 0.581s, Total Time: 0.592s, Response Size: 392 bytes
+2025-07-30 21:53:17 - voice_communication_monitoring - INFO - REQUEST_START - ID: 91562b8b-14a8-44de-9dcb-18f04d2dd7d6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:17.469403
+2025-07-30 21:53:17 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 91562b8b-14a8-44de-9dcb-18f04d2dd7d6
+2025-07-30 21:53:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 91562b8b-14a8-44de-9dcb-18f04d2dd7d6, Processing Time: 0.602s, Total Time: 0.605s, Response Size: 392 bytes
+2025-07-30 21:53:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6210756b-2676-44fe-b597-7f2087055fba, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:18.078398
+2025-07-30 21:53:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 6210756b-2676-44fe-b597-7f2087055fba
+2025-07-30 21:53:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 6210756b-2676-44fe-b597-7f2087055fba, Processing Time: 0.495s, Total Time: 0.496s, Response Size: 392 bytes
+2025-07-30 21:53:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 441d7815-5082-41bc-831d-14dfddc25128, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:53:18.851380
+2025-07-30 21:53:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 441d7815-5082-41bc-831d-14dfddc25128
+2025-07-30 21:53:19 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 441d7815-5082-41bc-831d-14dfddc25128, Processing Time: 0.556s, Total Time: 0.567s, Response Size: 392 bytes
+2025-07-30 21:53:19 - voice_communication_monitoring - INFO - REQUEST_START - ID: 35e24caa-e539-41e5-b379-2b3b50759141, Client: testclient, File Size: 0 bytes, Time: 2025-07-30 21:53:19.532459
+2025-07-30 21:53:19 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 35e24caa-e539-41e5-b379-2b3b50759141, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 21:53:19.549981
+2025-07-30 21:53:19 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9be88869-8caf-4115-9617-92f8eaa93f4e, Client: testclient, File Size: 22 bytes, Time: 2025-07-30 21:53:19.558452
+2025-07-30 21:53:19 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 9be88869-8caf-4115-9617-92f8eaa93f4e, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 21:53:19.571398
+2025-07-30 21:53:19 - voice_communication_monitoring - INFO - REQUEST_START - ID: 76db1838-13bc-42dd-8e61-4c5a5250aaeb, Client: testclient, File Size: 15728640 bytes, Time: 2025-07-30 21:53:19.622057
+2025-07-30 21:53:19 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 76db1838-13bc-42dd-8e61-4c5a5250aaeb, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'size': '파일 크기가 10.0MB를 초과합니다'}, 'details': 'size: 파일 크기가 10.0MB를 초과합니다'}, Time: 2025-07-30 21:53:19.622600
+2025-07-30 21:53:19 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0e797e99-935d-4681-8b66-446bc70eb64e, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:19.641276
+2025-07-30 21:53:19 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0e797e99-935d-4681-8b66-446bc70eb64e
+2025-07-30 21:53:19 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 0e797e99-935d-4681-8b66-446bc70eb64e, Type: Exception, Message: 내부 처리 오류, Time: 2025-07-30 21:53:19.643169
+2025-07-30 21:53:25 - voice_communication_monitoring - INFO - REQUEST_START - ID: bb6606a4-0df5-41c9-81c9-40d3e9abc5b6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:25.788796
+2025-07-30 21:53:25 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: bb6606a4-0df5-41c9-81c9-40d3e9abc5b6
+2025-07-30 21:53:26 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: bb6606a4-0df5-41c9-81c9-40d3e9abc5b6, Processing Time: 0.457s, Total Time: 0.465s, Response Size: 392 bytes
+2025-07-30 21:53:26 - voice_communication_monitoring - INFO - REQUEST_START - ID: 40e25244-2bd2-4890-a0d4-4412fe098d06, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:26.256398
+2025-07-30 21:53:26 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 40e25244-2bd2-4890-a0d4-4412fe098d06
+2025-07-30 21:53:26 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 40e25244-2bd2-4890-a0d4-4412fe098d06, Processing Time: 0.501s, Total Time: 0.503s, Response Size: 392 bytes
+2025-07-30 21:53:26 - voice_communication_monitoring - INFO - REQUEST_START - ID: 81d557e5-aa73-4085-89d0-7354508832f7, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:26.763754
+2025-07-30 21:53:26 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 81d557e5-aa73-4085-89d0-7354508832f7
+2025-07-30 21:53:27 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 81d557e5-aa73-4085-89d0-7354508832f7, Processing Time: 0.521s, Total Time: 0.524s, Response Size: 392 bytes
+2025-07-30 21:53:27 - voice_communication_monitoring - INFO - REQUEST_START - ID: 87325017-263a-44f8-86a4-0932dc8e4276, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:27.294591
+2025-07-30 21:53:27 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 87325017-263a-44f8-86a4-0932dc8e4276
+2025-07-30 21:53:27 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 87325017-263a-44f8-86a4-0932dc8e4276, Processing Time: 0.594s, Total Time: 0.598s, Response Size: 392 bytes
+2025-07-30 21:53:27 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0d49c50d-b5c0-4872-b52b-3473ff70056a, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:27.897702
+2025-07-30 21:53:27 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0d49c50d-b5c0-4872-b52b-3473ff70056a
+2025-07-30 21:53:28 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0d49c50d-b5c0-4872-b52b-3473ff70056a, Processing Time: 0.599s, Total Time: 0.600s, Response Size: 392 bytes
+2025-07-30 21:53:28 - voice_communication_monitoring - INFO - REQUEST_START - ID: 2dec9b7a-c4e1-43e6-af4d-346fb274462d, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:28.517405
+2025-07-30 21:53:28 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 2dec9b7a-c4e1-43e6-af4d-346fb274462d
+2025-07-30 21:53:29 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 2dec9b7a-c4e1-43e6-af4d-346fb274462d, Processing Time: 0.524s, Total Time: 0.529s, Response Size: 391 bytes
+2025-07-30 21:53:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: f60cfb52-2588-4f3d-8110-8c9ec8783482, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:29.057873
+2025-07-30 21:53:29 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f60cfb52-2588-4f3d-8110-8c9ec8783482
+2025-07-30 21:53:29 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f60cfb52-2588-4f3d-8110-8c9ec8783482, Processing Time: 0.544s, Total Time: 0.559s, Response Size: 392 bytes
+2025-07-30 21:53:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: d7e83195-ad65-455c-8942-eef91b673026, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:29.618922
+2025-07-30 21:53:29 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d7e83195-ad65-455c-8942-eef91b673026
+2025-07-30 21:53:30 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d7e83195-ad65-455c-8942-eef91b673026, Processing Time: 0.558s, Total Time: 0.560s, Response Size: 392 bytes
+2025-07-30 21:53:30 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8643a921-c01c-4fc8-bef6-7f7525516778, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:30.180769
+2025-07-30 21:53:30 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8643a921-c01c-4fc8-bef6-7f7525516778
+2025-07-30 21:53:30 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8643a921-c01c-4fc8-bef6-7f7525516778, Processing Time: 0.521s, Total Time: 0.525s, Response Size: 392 bytes
+2025-07-30 21:53:30 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9e29ef12-77db-44a3-a283-52d105d5287a, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:30.706757
+2025-07-30 21:53:30 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9e29ef12-77db-44a3-a283-52d105d5287a
+2025-07-30 21:53:31 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9e29ef12-77db-44a3-a283-52d105d5287a, Processing Time: 0.502s, Total Time: 0.507s, Response Size: 392 bytes
+2025-07-30 21:53:31 - voice_communication_monitoring - INFO - REQUEST_START - ID: 682c8c02-f940-49ce-a449-f087f30e8355, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:31.215603
+2025-07-30 21:53:31 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 682c8c02-f940-49ce-a449-f087f30e8355
+2025-07-30 21:53:31 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 682c8c02-f940-49ce-a449-f087f30e8355, Processing Time: 0.510s, Total Time: 0.512s, Response Size: 392 bytes
+2025-07-30 21:53:31 - voice_communication_monitoring - INFO - REQUEST_START - ID: ff82add3-6cff-432d-b150-9ffde9eb16e1, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:31.728449
+2025-07-30 21:53:31 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ff82add3-6cff-432d-b150-9ffde9eb16e1
+2025-07-30 21:53:32 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: ff82add3-6cff-432d-b150-9ffde9eb16e1, Processing Time: 0.558s, Total Time: 0.559s, Response Size: 392 bytes
+2025-07-30 21:53:32 - voice_communication_monitoring - INFO - REQUEST_START - ID: 7f38ab9a-6190-40fd-b779-887a5e17c009, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:32.288382
+2025-07-30 21:53:32 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 7f38ab9a-6190-40fd-b779-887a5e17c009
+2025-07-30 21:53:32 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 7f38ab9a-6190-40fd-b779-887a5e17c009, Processing Time: 0.486s, Total Time: 0.499s, Response Size: 392 bytes
+2025-07-30 21:53:33 - voice_communication_monitoring - INFO - REQUEST_START - ID: 36d58986-8aec-486c-a173-48d59ada0a6e, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:33.220288
+2025-07-30 21:53:33 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 36d58986-8aec-486c-a173-48d59ada0a6e
+2025-07-30 21:53:33 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 36d58986-8aec-486c-a173-48d59ada0a6e, Processing Time: 0.508s, Total Time: 0.523s, Response Size: 392 bytes
+2025-07-30 21:53:33 - voice_communication_monitoring - INFO - REQUEST_START - ID: 57d93109-7086-4150-93f8-d1460e013183, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:33.748732
+2025-07-30 21:53:33 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 57d93109-7086-4150-93f8-d1460e013183
+2025-07-30 21:53:34 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 57d93109-7086-4150-93f8-d1460e013183, Processing Time: 0.566s, Total Time: 0.580s, Response Size: 392 bytes
+2025-07-30 21:53:34 - voice_communication_monitoring - INFO - REQUEST_START - ID: 507a5fa7-cc59-4673-a5b7-0d7b7435a877, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:53:34.366211
+2025-07-30 21:53:34 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 507a5fa7-cc59-4673-a5b7-0d7b7435a877
+2025-07-30 21:53:34 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 507a5fa7-cc59-4673-a5b7-0d7b7435a877, Processing Time: 0.523s, Total Time: 0.525s, Response Size: 392 bytes
+2025-07-30 21:55:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: caaf692d-b88f-46c7-bf19-b11103f75d89, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:55:09.649458
+2025-07-30 21:55:09 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: caaf692d-b88f-46c7-bf19-b11103f75d89
+2025-07-30 21:55:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: caaf692d-b88f-46c7-bf19-b11103f75d89, Processing Time: 0.566s, Total Time: 0.569s, Response Size: 392 bytes
+2025-07-30 21:55:10 - voice_communication_monitoring - INFO - REQUEST_START - ID: 331f876d-0bd2-49a7-989a-c5db7ee96f5c, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:55:10.228685
+2025-07-30 21:55:10 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 331f876d-0bd2-49a7-989a-c5db7ee96f5c
+2025-07-30 21:55:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 331f876d-0bd2-49a7-989a-c5db7ee96f5c, Processing Time: 0.563s, Total Time: 0.565s, Response Size: 392 bytes
+2025-07-30 21:56:07 - voice_communication_monitoring - INFO - REQUEST_START - ID: d439991e-87de-41e8-ae01-d6824eaa1ab8, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:56:07.230252
+2025-07-30 21:56:07 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d439991e-87de-41e8-ae01-d6824eaa1ab8
+2025-07-30 21:56:11 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d439991e-87de-41e8-ae01-d6824eaa1ab8, Processing Time: 4.442s, Total Time: 4.447s, Response Size: 392 bytes
+2025-07-30 21:59:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: 2bd0b8f1-cef4-4caf-ab40-3466996b19b4, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:59:09.048883
+2025-07-30 21:59:09 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 2bd0b8f1-cef4-4caf-ab40-3466996b19b4
+2025-07-30 21:59:09 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 2bd0b8f1-cef4-4caf-ab40-3466996b19b4, Processing Time: 0.810s, Total Time: 0.814s, Response Size: 392 bytes
+2025-07-30 21:59:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: a6b8176f-2f41-4324-b1dc-b5dc2d7a9bd9, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:59:09.868785
+2025-07-30 21:59:09 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a6b8176f-2f41-4324-b1dc-b5dc2d7a9bd9
+2025-07-30 21:59:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a6b8176f-2f41-4324-b1dc-b5dc2d7a9bd9, Processing Time: 0.799s, Total Time: 0.801s, Response Size: 392 bytes
+2025-07-30 21:59:23 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8273e38c-cce9-4cd9-8d87-271ec18c75d8, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:59:23.213668
+2025-07-30 21:59:23 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8273e38c-cce9-4cd9-8d87-271ec18c75d8
+2025-07-30 21:59:23 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8273e38c-cce9-4cd9-8d87-271ec18c75d8, Processing Time: 0.557s, Total Time: 0.566s, Response Size: 392 bytes
+2025-07-30 21:59:23 - voice_communication_monitoring - INFO - REQUEST_START - ID: b8f67fb1-3353-4c08-9ac9-e591ed071826, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:59:23.896984
+2025-07-30 21:59:23 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b8f67fb1-3353-4c08-9ac9-e591ed071826
+2025-07-30 21:59:24 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: b8f67fb1-3353-4c08-9ac9-e591ed071826, Processing Time: 0.715s, Total Time: 0.730s, Response Size: 392 bytes
+2025-07-30 21:59:24 - voice_communication_monitoring - INFO - REQUEST_START - ID: 4b713089-528d-49d6-adee-6614900858a4, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:59:24.734830
+2025-07-30 21:59:24 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 4b713089-528d-49d6-adee-6614900858a4
+2025-07-30 21:59:25 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 4b713089-528d-49d6-adee-6614900858a4, Processing Time: 0.606s, Total Time: 0.669s, Response Size: 392 bytes
+2025-07-30 21:59:41 - voice_communication_monitoring - INFO - REQUEST_START - ID: 15c7551f-65ff-41fd-bc60-790de09a0237, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:59:41.887225
+2025-07-30 21:59:41 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 15c7551f-65ff-41fd-bc60-790de09a0237
+2025-07-30 21:59:43 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 15c7551f-65ff-41fd-bc60-790de09a0237, Processing Time: 1.477s, Total Time: 1.482s, Response Size: 392 bytes
+2025-07-30 21:59:43 - voice_communication_monitoring - INFO - REQUEST_START - ID: 3fa80107-63f6-4c2e-a04b-9c41669649dc, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:59:43.418473
+2025-07-30 21:59:43 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 3fa80107-63f6-4c2e-a04b-9c41669649dc
+2025-07-30 21:59:51 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 3fa80107-63f6-4c2e-a04b-9c41669649dc, Processing Time: 7.976s, Total Time: 8.040s, Response Size: 392 bytes
+2025-07-30 21:59:51 - voice_communication_monitoring - INFO - REQUEST_START - ID: 804cdf4d-2733-4c0d-98e2-8a675eb8c586, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 21:59:51.464914
+2025-07-30 21:59:51 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 804cdf4d-2733-4c0d-98e2-8a675eb8c586
+2025-07-30 21:59:52 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 804cdf4d-2733-4c0d-98e2-8a675eb8c586, Processing Time: 0.970s, Total Time: 0.973s, Response Size: 392 bytes
+2025-07-30 21:59:52 - voice_communication_monitoring - INFO - REQUEST_START - ID: 29961b17-de32-4982-b08c-9c3a7990b4e8, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:59:52.451600
+2025-07-30 21:59:52 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 29961b17-de32-4982-b08c-9c3a7990b4e8
+2025-07-30 21:59:55 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 29961b17-de32-4982-b08c-9c3a7990b4e8, Processing Time: 2.716s, Total Time: 2.719s, Response Size: 392 bytes
+2025-07-30 21:59:55 - voice_communication_monitoring - INFO - REQUEST_START - ID: 74d3caa1-6bb6-4cfd-8c96-2f2349499f94, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:59:55.283775
+2025-07-30 21:59:55 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 74d3caa1-6bb6-4cfd-8c96-2f2349499f94
+2025-07-30 21:59:57 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 74d3caa1-6bb6-4cfd-8c96-2f2349499f94, Processing Time: 2.568s, Total Time: 2.571s, Response Size: 392 bytes
+2025-07-30 21:59:57 - voice_communication_monitoring - INFO - REQUEST_START - ID: 293bda12-2d4d-47e4-9eda-14367e0759ad, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 21:59:57.969899
+2025-07-30 21:59:57 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 293bda12-2d4d-47e4-9eda-14367e0759ad
+2025-07-30 22:00:00 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 293bda12-2d4d-47e4-9eda-14367e0759ad, Processing Time: 2.491s, Total Time: 2.494s, Response Size: 392 bytes
+2025-07-30 22:00:00 - voice_communication_monitoring - INFO - REQUEST_START - ID: 61b94453-b7d5-4b80-8652-2d6fc8a33a9d, Client: testclient, File Size: 0 bytes, Time: 2025-07-30 22:00:00.597485
+2025-07-30 22:00:00 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 61b94453-b7d5-4b80-8652-2d6fc8a33a9d, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 22:00:00.607027
+2025-07-30 22:00:00 - voice_communication_monitoring - INFO - REQUEST_START - ID: 7ff4c48f-6250-4809-ad4a-782729812cc2, Client: testclient, File Size: 22 bytes, Time: 2025-07-30 22:00:00.609586
+2025-07-30 22:00:00 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 7ff4c48f-6250-4809-ad4a-782729812cc2, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 22:00:00.610484
+2025-07-30 22:00:01 - voice_communication_monitoring - INFO - REQUEST_START - ID: ffe1940c-1d21-43d9-9030-aa0c34c037bb, Client: testclient, File Size: 15728640 bytes, Time: 2025-07-30 22:00:01.261033
+2025-07-30 22:00:01 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: ffe1940c-1d21-43d9-9030-aa0c34c037bb, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'size': '파일 크기가 10.0MB를 초과합니다'}, 'details': 'size: 파일 크기가 10.0MB를 초과합니다'}, Time: 2025-07-30 22:00:01.261589
+2025-07-30 22:00:01 - voice_communication_monitoring - INFO - REQUEST_START - ID: b55507aa-07cb-4d43-9510-fdac8ada86f9, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:01.470060
+2025-07-30 22:00:01 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b55507aa-07cb-4d43-9510-fdac8ada86f9
+2025-07-30 22:00:01 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: b55507aa-07cb-4d43-9510-fdac8ada86f9, Type: Exception, Message: 내부 처리 오류, Time: 2025-07-30 22:00:01.518351
+2025-07-30 22:00:08 - voice_communication_monitoring - INFO - REQUEST_START - ID: a0c57183-4c69-4a72-965e-326be874fbde, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:08.995611
+2025-07-30 22:00:08 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a0c57183-4c69-4a72-965e-326be874fbde
+2025-07-30 22:00:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a0c57183-4c69-4a72-965e-326be874fbde, Processing Time: 9.193s, Total Time: 9.195s, Response Size: 392 bytes
+2025-07-30 22:00:21 - voice_communication_monitoring - INFO - REQUEST_START - ID: 7e4d7861-d286-491a-ad85-cf9009a35562, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:21.975908
+2025-07-30 22:00:21 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 7e4d7861-d286-491a-ad85-cf9009a35562
+2025-07-30 22:00:28 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 7e4d7861-d286-491a-ad85-cf9009a35562, Processing Time: 6.318s, Total Time: 6.320s, Response Size: 392 bytes
+2025-07-30 22:00:28 - voice_communication_monitoring - INFO - REQUEST_START - ID: 98fe7b53-6dc0-4f9e-9427-48a7821a2440, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:28.413575
+2025-07-30 22:00:28 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 98fe7b53-6dc0-4f9e-9427-48a7821a2440
+2025-07-30 22:00:39 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 98fe7b53-6dc0-4f9e-9427-48a7821a2440, Processing Time: 11.456s, Total Time: 11.465s, Response Size: 392 bytes
+2025-07-30 22:00:39 - voice_communication_monitoring - INFO - REQUEST_START - ID: 23c0e631-da5a-4a0a-bd8e-4c90a7490d4d, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:39.880151
+2025-07-30 22:00:39 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 23c0e631-da5a-4a0a-bd8e-4c90a7490d4d
+2025-07-30 22:00:40 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 23c0e631-da5a-4a0a-bd8e-4c90a7490d4d, Processing Time: 1.108s, Total Time: 1.114s, Response Size: 392 bytes
+2025-07-30 22:00:41 - voice_communication_monitoring - INFO - REQUEST_START - ID: 5adf3f69-b202-4014-bfb9-7cac804eb9a6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:41.002416
+2025-07-30 22:00:41 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 5adf3f69-b202-4014-bfb9-7cac804eb9a6
+2025-07-30 22:00:42 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 5adf3f69-b202-4014-bfb9-7cac804eb9a6, Processing Time: 1.422s, Total Time: 1.425s, Response Size: 392 bytes
+2025-07-30 22:00:42 - voice_communication_monitoring - INFO - REQUEST_START - ID: d6db46c4-dea6-4bca-b4c0-7188115b99f7, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:42.428472
+2025-07-30 22:00:42 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d6db46c4-dea6-4bca-b4c0-7188115b99f7
+2025-07-30 22:00:43 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d6db46c4-dea6-4bca-b4c0-7188115b99f7, Processing Time: 1.150s, Total Time: 1.153s, Response Size: 392 bytes
+2025-07-30 22:00:43 - voice_communication_monitoring - INFO - REQUEST_START - ID: fa42232f-3775-4caf-a2ac-fa841f844a45, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:43.583609
+2025-07-30 22:00:43 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: fa42232f-3775-4caf-a2ac-fa841f844a45
+2025-07-30 22:00:44 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: fa42232f-3775-4caf-a2ac-fa841f844a45, Processing Time: 0.926s, Total Time: 0.931s, Response Size: 392 bytes
+2025-07-30 22:00:44 - voice_communication_monitoring - INFO - REQUEST_START - ID: ffea8351-1ceb-453e-98a0-9bbace6075a8, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:44.518273
+2025-07-30 22:00:44 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ffea8351-1ceb-453e-98a0-9bbace6075a8
+2025-07-30 22:00:45 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: ffea8351-1ceb-453e-98a0-9bbace6075a8, Processing Time: 0.956s, Total Time: 0.961s, Response Size: 391 bytes
+2025-07-30 22:00:45 - voice_communication_monitoring - INFO - REQUEST_START - ID: 7f2016a4-b442-4432-87da-af056de7c125, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:45.481576
+2025-07-30 22:00:45 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 7f2016a4-b442-4432-87da-af056de7c125
+2025-07-30 22:00:46 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 7f2016a4-b442-4432-87da-af056de7c125, Processing Time: 1.093s, Total Time: 1.100s, Response Size: 392 bytes
+2025-07-30 22:00:46 - voice_communication_monitoring - INFO - REQUEST_START - ID: bb0dd153-a419-4381-a9d8-8df6e73e7cb5, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:46.584821
+2025-07-30 22:00:46 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: bb0dd153-a419-4381-a9d8-8df6e73e7cb5
+2025-07-30 22:00:47 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: bb0dd153-a419-4381-a9d8-8df6e73e7cb5, Processing Time: 0.825s, Total Time: 0.828s, Response Size: 392 bytes
+2025-07-30 22:00:47 - voice_communication_monitoring - INFO - REQUEST_START - ID: 18d6b769-f108-4326-bf61-a3b6a453a910, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:47.413510
+2025-07-30 22:00:47 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 18d6b769-f108-4326-bf61-a3b6a453a910
+2025-07-30 22:00:48 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 18d6b769-f108-4326-bf61-a3b6a453a910, Processing Time: 1.014s, Total Time: 1.016s, Response Size: 392 bytes
+2025-07-30 22:00:48 - voice_communication_monitoring - INFO - REQUEST_START - ID: 885baae7-8ad5-4022-8645-542d5936bd22, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:00:48.483673
+2025-07-30 22:00:48 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 885baae7-8ad5-4022-8645-542d5936bd22
+2025-07-30 22:00:49 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 885baae7-8ad5-4022-8645-542d5936bd22, Processing Time: 0.958s, Total Time: 0.964s, Response Size: 392 bytes
+2025-07-30 22:03:03 - voice_communication_monitoring - INFO - REQUEST_START - ID: 38f38dec-5f2e-49f1-812c-9a7351f15e7b, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:03.404795
+2025-07-30 22:03:03 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 38f38dec-5f2e-49f1-812c-9a7351f15e7b
+2025-07-30 22:03:04 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 38f38dec-5f2e-49f1-812c-9a7351f15e7b, Processing Time: 0.620s, Total Time: 0.623s, Response Size: 392 bytes
+2025-07-30 22:03:04 - voice_communication_monitoring - INFO - REQUEST_START - ID: f0d13392-3a31-4d46-aa4c-739032016db7, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:04.055992
+2025-07-30 22:03:04 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f0d13392-3a31-4d46-aa4c-739032016db7
+2025-07-30 22:03:04 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f0d13392-3a31-4d46-aa4c-739032016db7, Processing Time: 0.603s, Total Time: 0.605s, Response Size: 392 bytes
+2025-07-30 22:03:04 - voice_communication_monitoring - INFO - REQUEST_START - ID: 1da3a814-a324-4450-8faa-f9194182a0b6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:04.666383
+2025-07-30 22:03:04 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 1da3a814-a324-4450-8faa-f9194182a0b6
+2025-07-30 22:03:05 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 1da3a814-a324-4450-8faa-f9194182a0b6, Processing Time: 0.653s, Total Time: 0.656s, Response Size: 392 bytes
+2025-07-30 22:03:05 - voice_communication_monitoring - INFO - REQUEST_START - ID: a7eab654-d9cc-40a3-82e9-e50c734da0e1, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 22:03:05.337831
+2025-07-30 22:03:05 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a7eab654-d9cc-40a3-82e9-e50c734da0e1
+2025-07-30 22:03:05 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a7eab654-d9cc-40a3-82e9-e50c734da0e1, Processing Time: 0.603s, Total Time: 0.606s, Response Size: 392 bytes
+2025-07-30 22:03:06 - voice_communication_monitoring - INFO - REQUEST_START - ID: 1c086d6a-8fde-45c3-bed9-47c927c4d7b4, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 22:03:06.059351
+2025-07-30 22:03:06 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 1c086d6a-8fde-45c3-bed9-47c927c4d7b4
+2025-07-30 22:03:07 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 1c086d6a-8fde-45c3-bed9-47c927c4d7b4, Processing Time: 1.247s, Total Time: 1.666s, Response Size: 392 bytes
+2025-07-30 22:03:07 - voice_communication_monitoring - INFO - REQUEST_START - ID: 28f0dd15-4556-4b3d-8eb3-517320ef394d, Client: testclient, File Size: 2044 bytes, Time: 2025-07-30 22:03:07.832443
+2025-07-30 22:03:07 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 28f0dd15-4556-4b3d-8eb3-517320ef394d
+2025-07-30 22:03:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 28f0dd15-4556-4b3d-8eb3-517320ef394d, Processing Time: 1.023s, Total Time: 1.031s, Response Size: 392 bytes
+2025-07-30 22:03:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6a3909d7-4414-4394-a422-4891affbeab3, Client: testclient, File Size: 0 bytes, Time: 2025-07-30 22:03:09.015040
+2025-07-30 22:03:09 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 6a3909d7-4414-4394-a422-4891affbeab3, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 22:03:09.020274
+2025-07-30 22:03:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: dd562215-4a35-4f28-92dc-68a1f0f70aac, Client: testclient, File Size: 22 bytes, Time: 2025-07-30 22:03:09.023064
+2025-07-30 22:03:09 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: dd562215-4a35-4f28-92dc-68a1f0f70aac, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'content': '허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, 'details': 'content: 허용되지 않는 파일 타입입니다. 허용 타입: audio/wav, audio/x-wav'}, Time: 2025-07-30 22:03:09.024668
+2025-07-30 22:03:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: edfaa990-4207-4c71-96de-29ac93c93559, Client: testclient, File Size: 15728640 bytes, Time: 2025-07-30 22:03:09.079402
+2025-07-30 22:03:09 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: edfaa990-4207-4c71-96de-29ac93c93559, Type: HTTP_ERROR, Message: HTTP 400: {'error': 'FILE_VALIDATION_FAILED', 'message': '파일 검증에 실패했습니다', 'validation_errors': {'size': '파일 크기가 10.0MB를 초과합니다'}, 'details': 'size: 파일 크기가 10.0MB를 초과합니다'}, Time: 2025-07-30 22:03:09.079909
+2025-07-30 22:03:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0e316709-7dbc-43ad-80a8-4e3e570ab77b, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:09.110269
+2025-07-30 22:03:09 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0e316709-7dbc-43ad-80a8-4e3e570ab77b
+2025-07-30 22:03:09 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: 0e316709-7dbc-43ad-80a8-4e3e570ab77b, Type: Exception, Message: 내부 처리 오류, Time: 2025-07-30 22:03:09.112004
+2025-07-30 22:03:15 - voice_communication_monitoring - INFO - REQUEST_START - ID: 15cc118a-645c-4a29-8279-29d1205eb499, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:15.226909
+2025-07-30 22:03:15 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 15cc118a-645c-4a29-8279-29d1205eb499
+2025-07-30 22:03:16 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 15cc118a-645c-4a29-8279-29d1205eb499, Processing Time: 1.102s, Total Time: 1.126s, Response Size: 391 bytes
+2025-07-30 22:03:16 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9942cd0d-efaa-41fb-8721-ee52c4d78bf5, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:16.359045
+2025-07-30 22:03:16 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9942cd0d-efaa-41fb-8721-ee52c4d78bf5
+2025-07-30 22:03:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9942cd0d-efaa-41fb-8721-ee52c4d78bf5, Processing Time: 2.483s, Total Time: 2.487s, Response Size: 390 bytes
+2025-07-30 22:03:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 56ca8017-06c4-4248-a126-11924dc756f9, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:18.850333
+2025-07-30 22:03:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 56ca8017-06c4-4248-a126-11924dc756f9
+2025-07-30 22:03:19 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 56ca8017-06c4-4248-a126-11924dc756f9, Processing Time: 1.052s, Total Time: 1.054s, Response Size: 392 bytes
+2025-07-30 22:03:19 - voice_communication_monitoring - INFO - REQUEST_START - ID: a165518f-e7b3-45f8-af89-3c6d3d14f88f, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:19.910890
+2025-07-30 22:03:19 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a165518f-e7b3-45f8-af89-3c6d3d14f88f
+2025-07-30 22:03:20 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a165518f-e7b3-45f8-af89-3c6d3d14f88f, Processing Time: 0.687s, Total Time: 0.689s, Response Size: 390 bytes
+2025-07-30 22:03:20 - voice_communication_monitoring - INFO - REQUEST_START - ID: cfdceb35-ed60-49f6-b1b6-587314690850, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:20.604248
+2025-07-30 22:03:20 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: cfdceb35-ed60-49f6-b1b6-587314690850
+2025-07-30 22:03:21 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: cfdceb35-ed60-49f6-b1b6-587314690850, Processing Time: 0.728s, Total Time: 0.730s, Response Size: 392 bytes
+2025-07-30 22:03:21 - voice_communication_monitoring - INFO - REQUEST_START - ID: 474dfbe2-73f5-4cf5-9aee-935ead71e46a, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:21.371929
+2025-07-30 22:03:21 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 474dfbe2-73f5-4cf5-9aee-935ead71e46a
+2025-07-30 22:03:22 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 474dfbe2-73f5-4cf5-9aee-935ead71e46a, Processing Time: 0.649s, Total Time: 0.655s, Response Size: 392 bytes
+2025-07-30 22:03:22 - voice_communication_monitoring - INFO - REQUEST_START - ID: 115e2ecd-b395-4904-9722-9d95cd4c9222, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:22.029275
+2025-07-30 22:03:22 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 115e2ecd-b395-4904-9722-9d95cd4c9222
+2025-07-30 22:03:22 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 115e2ecd-b395-4904-9722-9d95cd4c9222, Processing Time: 0.848s, Total Time: 0.850s, Response Size: 392 bytes
+2025-07-30 22:03:22 - voice_communication_monitoring - INFO - REQUEST_START - ID: f912293d-8f95-4b70-bd2d-5b1d9575bc65, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:22.880752
+2025-07-30 22:03:22 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f912293d-8f95-4b70-bd2d-5b1d9575bc65
+2025-07-30 22:03:23 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f912293d-8f95-4b70-bd2d-5b1d9575bc65, Processing Time: 1.086s, Total Time: 1.088s, Response Size: 392 bytes
+2025-07-30 22:03:23 - voice_communication_monitoring - INFO - REQUEST_START - ID: 11d3c6c6-1c49-4c67-9f8a-c0ba1d4875b6, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:23.969884
+2025-07-30 22:03:23 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 11d3c6c6-1c49-4c67-9f8a-c0ba1d4875b6
+2025-07-30 22:03:24 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 11d3c6c6-1c49-4c67-9f8a-c0ba1d4875b6, Processing Time: 0.754s, Total Time: 0.761s, Response Size: 392 bytes
+2025-07-30 22:03:24 - voice_communication_monitoring - INFO - REQUEST_START - ID: 04f64a21-8564-4bee-b97b-9d69ea76e873, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:24.733565
+2025-07-30 22:03:24 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 04f64a21-8564-4bee-b97b-9d69ea76e873
+2025-07-30 22:03:25 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 04f64a21-8564-4bee-b97b-9d69ea76e873, Processing Time: 0.790s, Total Time: 0.791s, Response Size: 392 bytes
+2025-07-30 22:03:25 - voice_communication_monitoring - INFO - REQUEST_START - ID: a6f866d2-9274-4030-9496-a7705672f9ed, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:25.527856
+2025-07-30 22:03:25 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a6f866d2-9274-4030-9496-a7705672f9ed
+2025-07-30 22:03:26 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a6f866d2-9274-4030-9496-a7705672f9ed, Processing Time: 0.760s, Total Time: 0.765s, Response Size: 392 bytes
+2025-07-30 22:03:26 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9b0bf3e6-fa9d-4ea6-ac44-9c0b445fc7d1, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:26.294789
+2025-07-30 22:03:26 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9b0bf3e6-fa9d-4ea6-ac44-9c0b445fc7d1
+2025-07-30 22:03:27 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9b0bf3e6-fa9d-4ea6-ac44-9c0b445fc7d1, Processing Time: 0.749s, Total Time: 0.751s, Response Size: 392 bytes
+2025-07-30 22:03:27 - voice_communication_monitoring - INFO - REQUEST_START - ID: 65c2d588-b0ff-46bf-8615-6466ea594756, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:27.046554
+2025-07-30 22:03:27 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 65c2d588-b0ff-46bf-8615-6466ea594756
+2025-07-30 22:03:27 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 65c2d588-b0ff-46bf-8615-6466ea594756, Processing Time: 0.769s, Total Time: 0.771s, Response Size: 392 bytes
+2025-07-30 22:03:27 - voice_communication_monitoring - INFO - REQUEST_START - ID: 5203ac61-ddff-47b6-87a8-e7d2bc38d64c, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:27.819658
+2025-07-30 22:03:27 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 5203ac61-ddff-47b6-87a8-e7d2bc38d64c
+2025-07-30 22:03:29 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 5203ac61-ddff-47b6-87a8-e7d2bc38d64c, Processing Time: 2.039s, Total Time: 2.041s, Response Size: 392 bytes
+2025-07-30 22:03:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: 65befeb3-c0f6-4e51-89c4-f2dfc2cbde17, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:29.863039
+2025-07-30 22:03:29 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 65befeb3-c0f6-4e51-89c4-f2dfc2cbde17
+2025-07-30 22:03:30 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 65befeb3-c0f6-4e51-89c4-f2dfc2cbde17, Processing Time: 0.950s, Total Time: 0.952s, Response Size: 392 bytes
+2025-07-30 22:03:30 - voice_communication_monitoring - INFO - REQUEST_START - ID: bab80069-f3db-408a-92ef-d077ef782b8a, Client: testclient, File Size: 32044 bytes, Time: 2025-07-30 22:03:30.850009
+2025-07-30 22:03:30 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: bab80069-f3db-408a-92ef-d077ef782b8a
+2025-07-30 22:03:31 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: bab80069-f3db-408a-92ef-d077ef782b8a, Processing Time: 0.928s, Total Time: 0.930s, Response Size: 392 bytes
+2025-07-30 22:16:27 - voice_communication_monitoring - INFO - REQUEST_START - ID: 3cfd672d-8bc3-4af5-8ec9-e602aad5b10a, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:16:27.703798
+2025-07-30 22:16:27 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 3cfd672d-8bc3-4af5-8ec9-e602aad5b10a
+2025-07-30 22:16:27 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 3cfd672d-8bc3-4af5-8ec9-e602aad5b10a, Processing Time: 0.000s, Total Time: 0.003s, Response Size: 236 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 85839e9e-9628-4553-b119-bc8c002b6a53, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.342760
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 85839e9e-9628-4553-b119-bc8c002b6a53
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 85839e9e-9628-4553-b119-bc8c002b6a53, Processing Time: 0.000s, Total Time: 0.007s, Response Size: 236 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: a32a562b-fd1d-46bf-a8bb-4289f1f40763, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.369176
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: a32a562b-fd1d-46bf-a8bb-4289f1f40763
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: a32a562b-fd1d-46bf-a8bb-4289f1f40763, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 251 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6423b9b4-4ea6-46ef-a72b-ee28e11f7d6b, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.374856
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 6423b9b4-4ea6-46ef-a72b-ee28e11f7d6b
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 6423b9b4-4ea6-46ef-a72b-ee28e11f7d6b, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 251 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 907849ff-424c-41fa-9331-c173bb83c7c5, Client: testclient, File Size: 244 bytes, Time: 2025-07-30 22:18:36.390052
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 907849ff-424c-41fa-9331-c173bb83c7c5
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 907849ff-424c-41fa-9331-c173bb83c7c5, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 243 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 04647c13-865f-47cc-ab4c-79598b50ac07, Client: testclient, File Size: 244 bytes, Time: 2025-07-30 22:18:36.399065
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 04647c13-865f-47cc-ab4c-79598b50ac07
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 04647c13-865f-47cc-ab4c-79598b50ac07, Processing Time: 0.000s, Total Time: 0.003s, Response Size: 243 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: bd9fd96e-d622-4266-b778-14c73b196a5e, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.409722
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: bd9fd96e-d622-4266-b778-14c73b196a5e
+2025-07-30 22:18:36 - voice_communication_monitoring - ERROR - REQUEST_ERROR - ID: bd9fd96e-d622-4266-b778-14c73b196a5e, Type: Exception, Message: 테스트 오류, Time: 2025-07-30 22:18:36.552486
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 7f987b7a-3819-48f6-9dcb-362fdf3b19e8, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.567689
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 7f987b7a-3819-48f6-9dcb-362fdf3b19e8
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 7f987b7a-3819-48f6-9dcb-362fdf3b19e8, Processing Time: 0.000s, Total Time: 0.003s, Response Size: 236 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 050118e7-9f88-49da-a7af-6e320c032c71, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.575771
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 050118e7-9f88-49da-a7af-6e320c032c71
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 050118e7-9f88-49da-a7af-6e320c032c71, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 236 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0cdd9f6f-24c2-4b28-90f0-83562b970ca8, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.587142
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0cdd9f6f-24c2-4b28-90f0-83562b970ca8
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0cdd9f6f-24c2-4b28-90f0-83562b970ca8, Processing Time: 0.000s, Total Time: 0.141s, Response Size: 236 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: e451c539-c199-4744-b261-0d9066d79f8b, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.735438
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e451c539-c199-4744-b261-0d9066d79f8b
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e451c539-c199-4744-b261-0d9066d79f8b, Processing Time: 0.000s, Total Time: 0.015s, Response Size: 236 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: c11eb20e-3e19-47da-8a2c-ce542269a734, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.767961
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: c11eb20e-3e19-47da-8a2c-ce542269a734
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: c11eb20e-3e19-47da-8a2c-ce542269a734, Processing Time: 0.000s, Total Time: 0.136s, Response Size: 236 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 1c453145-b245-43ba-8add-ec7f809a3511, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.912922
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 1c453145-b245-43ba-8add-ec7f809a3511
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 1c453145-b245-43ba-8add-ec7f809a3511, Processing Time: 0.000s, Total Time: 0.005s, Response Size: 243 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 23b8beac-5196-4bbe-a0e1-cf24e1e16ae0, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.918668
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 23b8beac-5196-4bbe-a0e1-cf24e1e16ae0
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 23b8beac-5196-4bbe-a0e1-cf24e1e16ae0, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 243 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0f5d0529-8d40-41e2-8810-4e53dd82f85e, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.921082
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0f5d0529-8d40-41e2-8810-4e53dd82f85e
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0f5d0529-8d40-41e2-8810-4e53dd82f85e, Processing Time: 0.000s, Total Time: 0.015s, Response Size: 243 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 67216058-1293-4817-abd2-bc117c1a8475, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.938912
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 67216058-1293-4817-abd2-bc117c1a8475
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 67216058-1293-4817-abd2-bc117c1a8475, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 243 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 214ae6ba-a4f5-471e-b804-a1d5d72e8539, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.941259
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 214ae6ba-a4f5-471e-b804-a1d5d72e8539
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 214ae6ba-a4f5-471e-b804-a1d5d72e8539, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 243 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: d3a5e321-0305-4bd3-b288-73f636347aab, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.959027
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d3a5e321-0305-4bd3-b288-73f636347aab
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d3a5e321-0305-4bd3-b288-73f636347aab, Processing Time: 0.000s, Total Time: 0.002s, Response Size: 250 bytes
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6556363b-0a21-44ae-8a21-157a9e99068e, Client: testclient, File Size: 3244 bytes, Time: 2025-07-30 22:18:36.968981
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 6556363b-0a21-44ae-8a21-157a9e99068e
+2025-07-30 22:18:36 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 6556363b-0a21-44ae-8a21-157a9e99068e, Processing Time: 0.000s, Total Time: 0.004s, Response Size: 250 bytes
+2025-07-30 22:49:53 - voice_communication_monitoring - INFO - REQUEST_START - ID: f3ad3a11-ee10-4bc5-9ccd-4c4caf042d87, Client: 127.0.0.1, File Size: 73246 bytes, Time: 2025-07-30 22:49:53.605799
+2025-07-30 22:49:53 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f3ad3a11-ee10-4bc5-9ccd-4c4caf042d87
+2025-07-30 22:49:55 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f3ad3a11-ee10-4bc5-9ccd-4c4caf042d87, Processing Time: 1.845s, Total Time: 1.886s, Response Size: 392 bytes
+2025-07-31 00:31:21 - voice_communication_monitoring - INFO - REQUEST_START - ID: b14831b4-1277-4b82-864a-dd05cdd62035, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:21.135930
+2025-07-31 00:31:21 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b14831b4-1277-4b82-864a-dd05cdd62035
+2025-07-31 00:31:50 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: b14831b4-1277-4b82-864a-dd05cdd62035, Processing Time: 29.113s, Total Time: 29.129s, Response Size: 429 bytes
+2025-07-31 00:31:50 - voice_communication_monitoring - INFO - REQUEST_START - ID: f1c1791c-84d9-4201-9b74-82bab230617b, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:50.530367
+2025-07-31 00:31:50 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f1c1791c-84d9-4201-9b74-82bab230617b
+2025-07-31 00:31:52 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f1c1791c-84d9-4201-9b74-82bab230617b, Processing Time: 1.790s, Total Time: 2.008s, Response Size: 428 bytes
+2025-07-31 00:31:52 - voice_communication_monitoring - INFO - REQUEST_START - ID: 601941a6-62e6-4a16-9d11-9cca2630fd19, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:52.601898
+2025-07-31 00:31:52 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 601941a6-62e6-4a16-9d11-9cca2630fd19
+2025-07-31 00:31:53 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 601941a6-62e6-4a16-9d11-9cca2630fd19, Processing Time: 0.597s, Total Time: 0.601s, Response Size: 428 bytes
+2025-07-31 00:31:53 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8336f8d2-85d8-4712-bd60-f52c12e06d9a, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:53.264724
+2025-07-31 00:31:53 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8336f8d2-85d8-4712-bd60-f52c12e06d9a
+2025-07-31 00:31:53 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8336f8d2-85d8-4712-bd60-f52c12e06d9a, Processing Time: 0.588s, Total Time: 0.592s, Response Size: 428 bytes
+2025-07-31 00:31:53 - voice_communication_monitoring - INFO - REQUEST_START - ID: ea2ef7f4-4a62-445d-93cd-d4ffb7a9ddf6, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:53.924848
+2025-07-31 00:31:53 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ea2ef7f4-4a62-445d-93cd-d4ffb7a9ddf6
+2025-07-31 00:31:54 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: ea2ef7f4-4a62-445d-93cd-d4ffb7a9ddf6, Processing Time: 0.582s, Total Time: 0.586s, Response Size: 428 bytes
+2025-07-31 00:31:54 - voice_communication_monitoring - INFO - REQUEST_START - ID: 347fb625-4e74-4098-a887-972ef6581435, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:54.571754
+2025-07-31 00:31:54 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 347fb625-4e74-4098-a887-972ef6581435
+2025-07-31 00:31:55 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 347fb625-4e74-4098-a887-972ef6581435, Processing Time: 0.612s, Total Time: 0.617s, Response Size: 428 bytes
+2025-07-31 00:31:55 - voice_communication_monitoring - INFO - REQUEST_START - ID: e715be12-5db4-4c0e-8912-0f8f190d6988, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:55.254047
+2025-07-31 00:31:55 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e715be12-5db4-4c0e-8912-0f8f190d6988
+2025-07-31 00:31:55 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e715be12-5db4-4c0e-8912-0f8f190d6988, Processing Time: 0.622s, Total Time: 0.627s, Response Size: 428 bytes
+2025-07-31 00:31:55 - voice_communication_monitoring - INFO - REQUEST_START - ID: fac6cfd5-1aac-41d8-8ae3-d59cf0d16fd3, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:55.955002
+2025-07-31 00:31:55 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: fac6cfd5-1aac-41d8-8ae3-d59cf0d16fd3
+2025-07-31 00:31:56 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: fac6cfd5-1aac-41d8-8ae3-d59cf0d16fd3, Processing Time: 0.616s, Total Time: 0.619s, Response Size: 426 bytes
+2025-07-31 00:31:56 - voice_communication_monitoring - INFO - REQUEST_START - ID: 20aa972e-a7d6-40b2-8eb5-bd3bed9fa6c8, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:56.647529
+2025-07-31 00:31:56 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 20aa972e-a7d6-40b2-8eb5-bd3bed9fa6c8
+2025-07-31 00:31:57 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 20aa972e-a7d6-40b2-8eb5-bd3bed9fa6c8, Processing Time: 0.616s, Total Time: 0.620s, Response Size: 428 bytes
+2025-07-31 00:31:57 - voice_communication_monitoring - INFO - REQUEST_START - ID: 665db0e3-23b2-4b43-90fe-8e8f830ffaa2, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:57.331864
+2025-07-31 00:31:57 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 665db0e3-23b2-4b43-90fe-8e8f830ffaa2
+2025-07-31 00:31:57 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 665db0e3-23b2-4b43-90fe-8e8f830ffaa2, Processing Time: 0.655s, Total Time: 0.660s, Response Size: 428 bytes
+2025-07-31 00:31:58 - voice_communication_monitoring - INFO - REQUEST_START - ID: 78e34c19-729b-4f66-ac57-b6d836b47acc, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:58.053008
+2025-07-31 00:31:58 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 78e34c19-729b-4f66-ac57-b6d836b47acc
+2025-07-31 00:31:58 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 78e34c19-729b-4f66-ac57-b6d836b47acc, Processing Time: 0.642s, Total Time: 0.646s, Response Size: 428 bytes
+2025-07-31 00:31:58 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0ceaa41b-9a7d-4e79-a8a8-0203f939b9f3, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:58.768823
+2025-07-31 00:31:58 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0ceaa41b-9a7d-4e79-a8a8-0203f939b9f3
+2025-07-31 00:31:59 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0ceaa41b-9a7d-4e79-a8a8-0203f939b9f3, Processing Time: 0.628s, Total Time: 0.632s, Response Size: 428 bytes
+2025-07-31 00:31:59 - voice_communication_monitoring - INFO - REQUEST_START - ID: ca16c610-483f-43b1-b8e9-8f3eaa3d4758, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:31:59.472070
+2025-07-31 00:31:59 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ca16c610-483f-43b1-b8e9-8f3eaa3d4758
+2025-07-31 00:32:00 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: ca16c610-483f-43b1-b8e9-8f3eaa3d4758, Processing Time: 0.621s, Total Time: 0.625s, Response Size: 427 bytes
+2025-07-31 00:32:00 - voice_communication_monitoring - INFO - REQUEST_START - ID: 561e8e13-e94f-44a4-b7b3-720ff40cc6c4, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:00.162821
+2025-07-31 00:32:00 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 561e8e13-e94f-44a4-b7b3-720ff40cc6c4
+2025-07-31 00:32:00 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 561e8e13-e94f-44a4-b7b3-720ff40cc6c4, Processing Time: 0.596s, Total Time: 0.600s, Response Size: 428 bytes
+2025-07-31 00:32:00 - voice_communication_monitoring - INFO - REQUEST_START - ID: ddccb534-c038-428c-97b7-232b5de9137e, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:00.826973
+2025-07-31 00:32:00 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ddccb534-c038-428c-97b7-232b5de9137e
+2025-07-31 00:32:01 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: ddccb534-c038-428c-97b7-232b5de9137e, Processing Time: 0.620s, Total Time: 0.625s, Response Size: 427 bytes
+2025-07-31 00:32:01 - voice_communication_monitoring - INFO - REQUEST_START - ID: d2240855-3bbb-4917-aa1c-ee37a8f4ba6b, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:01.517833
+2025-07-31 00:32:01 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d2240855-3bbb-4917-aa1c-ee37a8f4ba6b
+2025-07-31 00:32:02 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d2240855-3bbb-4917-aa1c-ee37a8f4ba6b, Processing Time: 0.602s, Total Time: 0.605s, Response Size: 428 bytes
+2025-07-31 00:32:02 - voice_communication_monitoring - INFO - REQUEST_START - ID: cc6e2809-a7f2-47e2-a845-3ac7bbf61198, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:02.187845
+2025-07-31 00:32:02 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: cc6e2809-a7f2-47e2-a845-3ac7bbf61198
+2025-07-31 00:32:02 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: cc6e2809-a7f2-47e2-a845-3ac7bbf61198, Processing Time: 0.717s, Total Time: 0.722s, Response Size: 428 bytes
+2025-07-31 00:32:02 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9e60b713-7dce-4d2f-9842-fa3893a94b45, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:02.974376
+2025-07-31 00:32:02 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9e60b713-7dce-4d2f-9842-fa3893a94b45
+2025-07-31 00:32:03 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9e60b713-7dce-4d2f-9842-fa3893a94b45, Processing Time: 0.578s, Total Time: 0.582s, Response Size: 426 bytes
+2025-07-31 00:32:03 - voice_communication_monitoring - INFO - REQUEST_START - ID: 77cf91ff-9250-4bce-8cd1-51445073363a, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:03.617899
+2025-07-31 00:32:03 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 77cf91ff-9250-4bce-8cd1-51445073363a
+2025-07-31 00:32:04 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 77cf91ff-9250-4bce-8cd1-51445073363a, Processing Time: 0.627s, Total Time: 0.631s, Response Size: 426 bytes
+2025-07-31 00:32:04 - voice_communication_monitoring - INFO - REQUEST_START - ID: 25e21b4b-2977-4be3-b454-fc970dbbb684, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:04.311383
+2025-07-31 00:32:04 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 25e21b4b-2977-4be3-b454-fc970dbbb684
+2025-07-31 00:32:05 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 25e21b4b-2977-4be3-b454-fc970dbbb684, Processing Time: 0.687s, Total Time: 0.690s, Response Size: 428 bytes
+2025-07-31 00:32:05 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8c5e81dc-a853-44dd-ae27-b315532063b3, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:05.065658
+2025-07-31 00:32:05 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8c5e81dc-a853-44dd-ae27-b315532063b3
+2025-07-31 00:32:05 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8c5e81dc-a853-44dd-ae27-b315532063b3, Processing Time: 0.669s, Total Time: 0.673s, Response Size: 428 bytes
+2025-07-31 00:32:05 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9ca700d2-4c17-4c31-9c14-9a35fcb9ea71, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:05.817315
+2025-07-31 00:32:05 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9ca700d2-4c17-4c31-9c14-9a35fcb9ea71
+2025-07-31 00:32:06 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9ca700d2-4c17-4c31-9c14-9a35fcb9ea71, Processing Time: 0.680s, Total Time: 0.685s, Response Size: 428 bytes
+2025-07-31 00:32:06 - voice_communication_monitoring - INFO - REQUEST_START - ID: 4e365243-7da5-4875-bee5-d44a1dd82cdf, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:06.568484
+2025-07-31 00:32:06 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 4e365243-7da5-4875-bee5-d44a1dd82cdf
+2025-07-31 00:32:07 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 4e365243-7da5-4875-bee5-d44a1dd82cdf, Processing Time: 0.744s, Total Time: 0.750s, Response Size: 428 bytes
+2025-07-31 00:32:07 - voice_communication_monitoring - INFO - REQUEST_START - ID: 210bb47b-be0a-47d0-a6b9-f75704e23a71, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:07.387426
+2025-07-31 00:32:07 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 210bb47b-be0a-47d0-a6b9-f75704e23a71
+2025-07-31 00:32:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 210bb47b-be0a-47d0-a6b9-f75704e23a71, Processing Time: 0.615s, Total Time: 0.620s, Response Size: 428 bytes
+2025-07-31 00:32:08 - voice_communication_monitoring - INFO - REQUEST_START - ID: cb92c998-16ea-4d8d-95db-e7735c95cbe5, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:08.067500
+2025-07-31 00:32:08 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: cb92c998-16ea-4d8d-95db-e7735c95cbe5
+2025-07-31 00:32:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: cb92c998-16ea-4d8d-95db-e7735c95cbe5, Processing Time: 0.661s, Total Time: 0.665s, Response Size: 428 bytes
+2025-07-31 00:32:08 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9138c879-d162-4af7-87ac-c75c3e1677b8, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:08.795063
+2025-07-31 00:32:08 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9138c879-d162-4af7-87ac-c75c3e1677b8
+2025-07-31 00:32:09 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9138c879-d162-4af7-87ac-c75c3e1677b8, Processing Time: 0.615s, Total Time: 0.618s, Response Size: 428 bytes
+2025-07-31 00:32:09 - voice_communication_monitoring - INFO - REQUEST_START - ID: 437cdf36-6fe0-46a3-bfdf-c3f606b76026, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:09.470033
+2025-07-31 00:32:09 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 437cdf36-6fe0-46a3-bfdf-c3f606b76026
+2025-07-31 00:32:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 437cdf36-6fe0-46a3-bfdf-c3f606b76026, Processing Time: 0.625s, Total Time: 0.629s, Response Size: 428 bytes
+2025-07-31 00:32:10 - voice_communication_monitoring - INFO - REQUEST_START - ID: de3c3196-48fd-43b9-b8ff-a0d36344145c, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:10.166015
+2025-07-31 00:32:10 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: de3c3196-48fd-43b9-b8ff-a0d36344145c
+2025-07-31 00:32:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: de3c3196-48fd-43b9-b8ff-a0d36344145c, Processing Time: 0.668s, Total Time: 0.673s, Response Size: 428 bytes
+2025-07-31 00:32:10 - voice_communication_monitoring - INFO - REQUEST_START - ID: 88951462-7e10-4a2c-b6d6-a959360ab281, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:10.907190
+2025-07-31 00:32:10 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 88951462-7e10-4a2c-b6d6-a959360ab281
+2025-07-31 00:32:11 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 88951462-7e10-4a2c-b6d6-a959360ab281, Processing Time: 0.711s, Total Time: 0.716s, Response Size: 428 bytes
+2025-07-31 00:32:11 - voice_communication_monitoring - INFO - REQUEST_START - ID: 5ac9842d-667b-4117-a189-0e40d5bac2eb, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:11.688511
+2025-07-31 00:32:11 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 5ac9842d-667b-4117-a189-0e40d5bac2eb
+2025-07-31 00:32:12 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 5ac9842d-667b-4117-a189-0e40d5bac2eb, Processing Time: 0.670s, Total Time: 0.674s, Response Size: 428 bytes
+2025-07-31 00:32:12 - voice_communication_monitoring - INFO - REQUEST_START - ID: dc8b1936-5f9c-4d13-b549-c2fca02a758c, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:12.428833
+2025-07-31 00:32:12 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: dc8b1936-5f9c-4d13-b549-c2fca02a758c
+2025-07-31 00:32:13 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: dc8b1936-5f9c-4d13-b549-c2fca02a758c, Processing Time: 0.695s, Total Time: 0.698s, Response Size: 428 bytes
+2025-07-31 00:32:13 - voice_communication_monitoring - INFO - REQUEST_START - ID: 5e9358b9-097d-46dc-8a14-b5344a3b7eda, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:13.200190
+2025-07-31 00:32:13 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 5e9358b9-097d-46dc-8a14-b5344a3b7eda
+2025-07-31 00:32:13 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 5e9358b9-097d-46dc-8a14-b5344a3b7eda, Processing Time: 0.630s, Total Time: 0.635s, Response Size: 428 bytes
+2025-07-31 00:32:13 - voice_communication_monitoring - INFO - REQUEST_START - ID: c5b6d64a-15e0-4ef3-83a0-edecaa5547ec, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:13.904334
+2025-07-31 00:32:13 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: c5b6d64a-15e0-4ef3-83a0-edecaa5547ec
+2025-07-31 00:32:14 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: c5b6d64a-15e0-4ef3-83a0-edecaa5547ec, Processing Time: 0.622s, Total Time: 0.627s, Response Size: 428 bytes
+2025-07-31 00:32:14 - voice_communication_monitoring - INFO - REQUEST_START - ID: 83aa2c86-14bb-4ed1-acfd-45afeba8f212, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:14.591974
+2025-07-31 00:32:14 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 83aa2c86-14bb-4ed1-acfd-45afeba8f212
+2025-07-31 00:32:15 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 83aa2c86-14bb-4ed1-acfd-45afeba8f212, Processing Time: 0.604s, Total Time: 0.608s, Response Size: 428 bytes
+2025-07-31 00:32:15 - voice_communication_monitoring - INFO - REQUEST_START - ID: d0ab9185-1d65-4060-adc7-7326b6f0a067, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:15.264412
+2025-07-31 00:32:15 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d0ab9185-1d65-4060-adc7-7326b6f0a067
+2025-07-31 00:32:15 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d0ab9185-1d65-4060-adc7-7326b6f0a067, Processing Time: 0.588s, Total Time: 0.593s, Response Size: 428 bytes
+2025-07-31 00:32:15 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0b04ebdb-9219-4d29-8069-12ff7c341016, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:15.927947
+2025-07-31 00:32:15 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0b04ebdb-9219-4d29-8069-12ff7c341016
+2025-07-31 00:32:16 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0b04ebdb-9219-4d29-8069-12ff7c341016, Processing Time: 0.693s, Total Time: 0.697s, Response Size: 428 bytes
+2025-07-31 00:32:16 - voice_communication_monitoring - INFO - REQUEST_START - ID: 54eb42c7-d61b-4076-876e-e1e594265313, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:16.696430
+2025-07-31 00:32:16 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 54eb42c7-d61b-4076-876e-e1e594265313
+2025-07-31 00:32:17 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 54eb42c7-d61b-4076-876e-e1e594265313, Processing Time: 0.636s, Total Time: 0.641s, Response Size: 428 bytes
+2025-07-31 00:32:17 - voice_communication_monitoring - INFO - REQUEST_START - ID: c5c6731b-d252-43c5-865f-219f280c31f3, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:17.403455
+2025-07-31 00:32:17 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: c5c6731b-d252-43c5-865f-219f280c31f3
+2025-07-31 00:32:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: c5c6731b-d252-43c5-865f-219f280c31f3, Processing Time: 0.610s, Total Time: 0.614s, Response Size: 428 bytes
+2025-07-31 00:32:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 52463367-955f-4111-95d9-0865c9ea20a8, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:18.084504
+2025-07-31 00:32:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 52463367-955f-4111-95d9-0865c9ea20a8
+2025-07-31 00:32:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 52463367-955f-4111-95d9-0865c9ea20a8, Processing Time: 0.806s, Total Time: 0.809s, Response Size: 428 bytes
+2025-07-31 00:32:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 2df6d2cd-dc0c-4522-afdb-efff03382fa6, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:18.961764
+2025-07-31 00:32:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 2df6d2cd-dc0c-4522-afdb-efff03382fa6
+2025-07-31 00:32:19 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 2df6d2cd-dc0c-4522-afdb-efff03382fa6, Processing Time: 0.674s, Total Time: 0.677s, Response Size: 428 bytes
+2025-07-31 00:32:19 - voice_communication_monitoring - INFO - REQUEST_START - ID: 1be4a65d-4912-42ee-9a98-67ca1b87508a, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:19.703910
+2025-07-31 00:32:19 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 1be4a65d-4912-42ee-9a98-67ca1b87508a
+2025-07-31 00:32:20 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 1be4a65d-4912-42ee-9a98-67ca1b87508a, Processing Time: 0.655s, Total Time: 0.660s, Response Size: 428 bytes
+2025-07-31 00:32:20 - voice_communication_monitoring - INFO - REQUEST_START - ID: d1e82cd6-1ea6-4cef-b88c-f99792cecaa2, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 00:32:20.444878
+2025-07-31 00:32:20 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d1e82cd6-1ea6-4cef-b88c-f99792cecaa2
+2025-07-31 00:32:21 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d1e82cd6-1ea6-4cef-b88c-f99792cecaa2, Processing Time: 0.654s, Total Time: 0.659s, Response Size: 428 bytes
+2025-07-31 00:32:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: 3206cc19-9456-451f-9062-d040da30b9bb, Client: 127.0.0.1, File Size: 912044 bytes, Time: 2025-07-31 00:32:29.284379
+2025-07-31 00:32:29 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 3206cc19-9456-451f-9062-d040da30b9bb
+2025-07-31 00:32:50 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 3206cc19-9456-451f-9062-d040da30b9bb, Processing Time: 20.831s, Total Time: 20.839s, Response Size: 2943 bytes
+2025-07-31 00:32:50 - voice_communication_monitoring - INFO - REQUEST_START - ID: 76ce7808-ca58-42ff-8d3e-71edfbe59439, Client: 127.0.0.1, File Size: 912044 bytes, Time: 2025-07-31 00:32:50.300096
+2025-07-31 00:32:50 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 76ce7808-ca58-42ff-8d3e-71edfbe59439
+2025-07-31 00:34:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 76ce7808-ca58-42ff-8d3e-71edfbe59439, Processing Time: 78.227s, Total Time: 78.261s, Response Size: 2897 bytes
+2025-07-31 00:34:08 - voice_communication_monitoring - INFO - REQUEST_START - ID: 280ce23b-592f-44fd-8353-9327621f31d7, Client: 127.0.0.1, File Size: 912044 bytes, Time: 2025-07-31 00:34:08.587668
+2025-07-31 00:34:08 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 280ce23b-592f-44fd-8353-9327621f31d7
+2025-07-31 00:34:24 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 280ce23b-592f-44fd-8353-9327621f31d7, Processing Time: 16.299s, Total Time: 16.318s, Response Size: 2932 bytes
+2025-07-31 00:34:24 - voice_communication_monitoring - INFO - REQUEST_START - ID: b4dd209f-8f91-4335-8b9d-d8191f5ab81f, Client: 127.0.0.1, File Size: 912044 bytes, Time: 2025-07-31 00:34:24.907722
+2025-07-31 00:34:24 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b4dd209f-8f91-4335-8b9d-d8191f5ab81f
+2025-07-31 00:35:14 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: b4dd209f-8f91-4335-8b9d-d8191f5ab81f, Processing Time: 49.749s, Total Time: 49.790s, Response Size: 2948 bytes
+2025-07-31 00:35:29 - voice_communication_monitoring - INFO - REQUEST_START - ID: c079f305-89f9-4e16-9ff0-21ec97eb55c1, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 00:35:29.974640
+2025-07-31 00:35:29 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: c079f305-89f9-4e16-9ff0-21ec97eb55c1
+2025-07-31 00:35:42 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: c079f305-89f9-4e16-9ff0-21ec97eb55c1, Processing Time: 12.647s, Total Time: 12.764s, Response Size: 2895 bytes
+2025-07-31 00:35:42 - voice_communication_monitoring - INFO - REQUEST_START - ID: d7e4fe64-2b8f-49e4-9331-7abd7ea020e5, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 00:35:42.918592
+2025-07-31 00:35:42 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d7e4fe64-2b8f-49e4-9331-7abd7ea020e5
+2025-07-31 00:36:01 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d7e4fe64-2b8f-49e4-9331-7abd7ea020e5, Processing Time: 18.123s, Total Time: 18.130s, Response Size: 2916 bytes
+2025-07-31 00:36:01 - voice_communication_monitoring - INFO - REQUEST_START - ID: db2d15b4-3f4c-4803-8bde-6a569a4ff980, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 00:36:01.294675
+2025-07-31 00:36:01 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: db2d15b4-3f4c-4803-8bde-6a569a4ff980
+2025-07-31 00:36:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: db2d15b4-3f4c-4803-8bde-6a569a4ff980, Processing Time: 16.815s, Total Time: 16.831s, Response Size: 3010 bytes
+2025-07-31 00:43:35 - voice_communication_monitoring - INFO - REQUEST_START - ID: be1b0989-1619-4ef8-bd01-ab2a15e251e2, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 00:43:35.610996
+2025-07-31 00:43:35 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: be1b0989-1619-4ef8-bd01-ab2a15e251e2
+2025-07-31 00:43:57 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: be1b0989-1619-4ef8-bd01-ab2a15e251e2, Processing Time: 21.619s, Total Time: 21.623s, Response Size: 3008 bytes
+2025-07-31 00:43:57 - voice_communication_monitoring - INFO - REQUEST_START - ID: ce7e29a8-6fe1-4f23-8dad-4534bc7301fe, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 00:43:57.241287
+2025-07-31 00:43:57 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ce7e29a8-6fe1-4f23-8dad-4534bc7301fe
+2025-07-31 00:44:24 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: ce7e29a8-6fe1-4f23-8dad-4534bc7301fe, Processing Time: 26.998s, Total Time: 27.009s, Response Size: 3065 bytes
+2025-07-31 00:44:24 - voice_communication_monitoring - INFO - REQUEST_START - ID: 3908437b-d298-477d-a9fb-7122c9b540e1, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 00:44:24.264869
+2025-07-31 00:44:24 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 3908437b-d298-477d-a9fb-7122c9b540e1
+2025-07-31 00:44:49 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 3908437b-d298-477d-a9fb-7122c9b540e1, Processing Time: 24.979s, Total Time: 25.033s, Response Size: 2859 bytes
+2025-07-31 00:47:31 - voice_communication_monitoring - INFO - REQUEST_START - ID: e76cb931-6ead-4ece-a6dc-894213d062fc, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 00:47:31.665803
+2025-07-31 00:47:31 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e76cb931-6ead-4ece-a6dc-894213d062fc
+2025-07-31 00:47:44 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e76cb931-6ead-4ece-a6dc-894213d062fc, Processing Time: 13.009s, Total Time: 13.015s, Response Size: 2886 bytes
+2025-07-31 00:48:10 - voice_communication_monitoring - INFO - REQUEST_START - ID: 4404f0bb-78e7-46bc-a17c-b9087abfef0e, Client: 127.0.0.1, File Size: 496044 bytes, Time: 2025-07-31 00:48:10.282307
+2025-07-31 00:48:10 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 4404f0bb-78e7-46bc-a17c-b9087abfef0e
+2025-07-31 00:48:42 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 4404f0bb-78e7-46bc-a17c-b9087abfef0e, Processing Time: 32.229s, Total Time: 32.243s, Response Size: 3146 bytes
+2025-07-31 00:48:43 - voice_communication_monitoring - INFO - REQUEST_START - ID: 4c8960e6-ae84-4787-a5af-0ba56bd5cbd8, Client: 127.0.0.1, File Size: 496044 bytes, Time: 2025-07-31 00:48:43.513349
+2025-07-31 00:48:43 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 4c8960e6-ae84-4787-a5af-0ba56bd5cbd8
+2025-07-31 00:49:45 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 4c8960e6-ae84-4787-a5af-0ba56bd5cbd8, Processing Time: 61.608s, Total Time: 61.669s, Response Size: 3130 bytes
+2025-07-31 00:49:45 - voice_communication_monitoring - INFO - REQUEST_START - ID: b5ede8ac-3817-45e4-b5a1-8c4bc9139683, Client: 127.0.0.1, File Size: 96044 bytes, Time: 2025-07-31 00:49:45.188040
+2025-07-31 00:49:45 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b5ede8ac-3817-45e4-b5a1-8c4bc9139683
+2025-07-31 00:49:59 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: b5ede8ac-3817-45e4-b5a1-8c4bc9139683, Processing Time: 14.025s, Total Time: 14.052s, Response Size: 2977 bytes
+2025-07-31 00:57:16 - voice_communication_monitoring - INFO - REQUEST_START - ID: 16701c4b-6dc2-4348-b8a8-4057708551f9, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 00:57:16.671848
+2025-07-31 00:57:16 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 16701c4b-6dc2-4348-b8a8-4057708551f9
+2025-07-31 00:57:38 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 16701c4b-6dc2-4348-b8a8-4057708551f9, Processing Time: 21.920s, Total Time: 21.922s, Response Size: 2869 bytes
+2025-07-31 00:58:24 - voice_communication_monitoring - INFO - REQUEST_START - ID: 5d68292b-0924-49f9-b5a9-8152a3bbc21e, Client: 127.0.0.1, File Size: 128044 bytes, Time: 2025-07-31 00:58:24.206129
+2025-07-31 00:58:24 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 5d68292b-0924-49f9-b5a9-8152a3bbc21e
+2025-07-31 00:58:31 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 5d68292b-0924-49f9-b5a9-8152a3bbc21e, Processing Time: 7.363s, Total Time: 7.365s, Response Size: 2843 bytes
+2025-07-31 00:58:59 - voice_communication_monitoring - INFO - REQUEST_START - ID: e8bf86a8-ab01-4013-a44a-2c58b0672c21, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 00:58:59.612979
+2025-07-31 00:58:59 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e8bf86a8-ab01-4013-a44a-2c58b0672c21
+2025-07-31 00:59:21 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e8bf86a8-ab01-4013-a44a-2c58b0672c21, Processing Time: 21.744s, Total Time: 21.746s, Response Size: 3046 bytes
+2025-07-31 01:01:43 - voice_communication_monitoring - INFO - REQUEST_START - ID: f844c16d-aa36-4044-85b9-70e10200b76f, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 01:01:43.005527
+2025-07-31 01:01:43 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f844c16d-aa36-4044-85b9-70e10200b76f
+2025-07-31 01:01:54 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f844c16d-aa36-4044-85b9-70e10200b76f, Processing Time: 11.377s, Total Time: 11.380s, Response Size: 3046 bytes
+2025-07-31 01:20:28 - voice_communication_monitoring - INFO - REQUEST_START - ID: f27d62cd-26a3-4a48-99f5-6ae230f6d63b, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 01:20:28.984978
+2025-07-31 01:20:28 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f27d62cd-26a3-4a48-99f5-6ae230f6d63b
+2025-07-31 01:20:47 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f27d62cd-26a3-4a48-99f5-6ae230f6d63b, Processing Time: 18.281s, Total Time: 18.283s, Response Size: 2970 bytes
+2025-07-31 01:21:28 - voice_communication_monitoring - INFO - REQUEST_START - ID: 251580cd-6ce3-4058-a16c-d3e96c6ee158, Client: 127.0.0.1, File Size: 96044 bytes, Time: 2025-07-31 01:21:28.897422
+2025-07-31 01:21:28 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 251580cd-6ce3-4058-a16c-d3e96c6ee158
+2025-07-31 01:21:40 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 251580cd-6ce3-4058-a16c-d3e96c6ee158, Processing Time: 11.816s, Total Time: 11.818s, Response Size: 2869 bytes
+2025-07-31 01:28:38 - voice_communication_monitoring - INFO - REQUEST_START - ID: e0da16e5-d8dd-43dc-9c84-5031679bacbc, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 01:28:38.832439
+2025-07-31 01:28:38 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e0da16e5-d8dd-43dc-9c84-5031679bacbc
+2025-07-31 01:28:49 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e0da16e5-d8dd-43dc-9c84-5031679bacbc, Processing Time: 10.178s, Total Time: 10.181s, Response Size: 2942 bytes
+2025-07-31 01:28:49 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9a77776a-fc4c-41a2-810b-7c3e1ba05306, Client: 127.0.0.1, File Size: 96044 bytes, Time: 2025-07-31 01:28:49.029197
+2025-07-31 01:28:49 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9a77776a-fc4c-41a2-810b-7c3e1ba05306
+2025-07-31 01:28:58 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9a77776a-fc4c-41a2-810b-7c3e1ba05306, Processing Time: 9.333s, Total Time: 9.335s, Response Size: 4129 bytes
+2025-07-31 02:01:54 - voice_communication_monitoring - INFO - REQUEST_START - ID: 078d0c9d-8e2d-4cb3-bf53-fcc186ab6d03, Client: 127.0.0.1, File Size: 80044 bytes, Time: 2025-07-31 02:01:54.718855
+2025-07-31 02:01:54 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 078d0c9d-8e2d-4cb3-bf53-fcc186ab6d03
+2025-07-31 02:02:11 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 078d0c9d-8e2d-4cb3-bf53-fcc186ab6d03, Processing Time: 16.298s, Total Time: 16.300s, Response Size: 4128 bytes
+2025-07-31 02:03:04 - voice_communication_monitoring - INFO - REQUEST_START - ID: 338cc2e1-3127-43fa-8987-3967a7bb38be, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 02:03:04.414020
+2025-07-31 02:03:04 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 338cc2e1-3127-43fa-8987-3967a7bb38be
+2025-07-31 02:03:12 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 338cc2e1-3127-43fa-8987-3967a7bb38be, Processing Time: 7.786s, Total Time: 7.789s, Response Size: 2593 bytes
+2025-07-31 02:03:53 - voice_communication_monitoring - INFO - REQUEST_START - ID: d9a5e294-9f8a-4bad-bcbe-b065f6c7a951, Client: 127.0.0.1, File Size: 752044 bytes, Time: 2025-07-31 02:03:53.955990
+2025-07-31 02:03:53 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d9a5e294-9f8a-4bad-bcbe-b065f6c7a951
+2025-07-31 02:04:02 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d9a5e294-9f8a-4bad-bcbe-b065f6c7a951, Processing Time: 8.296s, Total Time: 8.300s, Response Size: 4195 bytes
+2025-07-31 02:10:34 - voice_communication_monitoring - INFO - REQUEST_START - ID: be8c3dce-ee45-40da-9abf-ec75e6eebe84, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:10:34.646317
+2025-07-31 02:10:34 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: be8c3dce-ee45-40da-9abf-ec75e6eebe84
+2025-07-31 02:10:49 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: be8c3dce-ee45-40da-9abf-ec75e6eebe84, Processing Time: 14.709s, Total Time: 14.712s, Response Size: 4292 bytes
+2025-07-31 02:19:49 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0ab8bc77-87ec-451d-9050-36515ec489a6, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 02:19:49.546948
+2025-07-31 02:19:49 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0ab8bc77-87ec-451d-9050-36515ec489a6
+2025-07-31 02:19:58 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0ab8bc77-87ec-451d-9050-36515ec489a6, Processing Time: 8.944s, Total Time: 8.948s, Response Size: 4043 bytes
+2025-07-31 02:20:33 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8e80934f-5392-4800-9ba4-15a5c11a65e1, Client: 127.0.0.1, File Size: 80044 bytes, Time: 2025-07-31 02:20:33.756840
+2025-07-31 02:20:33 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8e80934f-5392-4800-9ba4-15a5c11a65e1
+2025-07-31 02:21:15 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8e80934f-5392-4800-9ba4-15a5c11a65e1, Processing Time: 42.013s, Total Time: 42.016s, Response Size: 4097 bytes
+2025-07-31 02:21:15 - voice_communication_monitoring - INFO - REQUEST_START - ID: e4e1cccb-af9e-4f3b-aed3-4866d4460bba, Client: 127.0.0.1, File Size: 80044 bytes, Time: 2025-07-31 02:21:15.781541
+2025-07-31 02:21:15 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e4e1cccb-af9e-4f3b-aed3-4866d4460bba
+2025-07-31 02:21:19 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e4e1cccb-af9e-4f3b-aed3-4866d4460bba, Processing Time: 3.784s, Total Time: 3.785s, Response Size: 4097 bytes
+2025-07-31 02:21:44 - voice_communication_monitoring - INFO - REQUEST_START - ID: ba316843-75b2-4db5-892f-bc0600f25d15, Client: 127.0.0.1, File Size: 96044 bytes, Time: 2025-07-31 02:21:44.451771
+2025-07-31 02:21:44 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: ba316843-75b2-4db5-892f-bc0600f25d15
+2025-07-31 02:21:54 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: ba316843-75b2-4db5-892f-bc0600f25d15, Processing Time: 10.126s, Total Time: 10.129s, Response Size: 4650 bytes
+2025-07-31 02:22:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 4d357acc-8fdf-4fd5-9fc3-4d6aef59ef80, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:22:18.865085
+2025-07-31 02:22:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 4d357acc-8fdf-4fd5-9fc3-4d6aef59ef80
+2025-07-31 02:22:43 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 4d357acc-8fdf-4fd5-9fc3-4d6aef59ef80, Processing Time: 24.898s, Total Time: 24.900s, Response Size: 3430 bytes
+2025-07-31 02:23:05 - voice_communication_monitoring - INFO - REQUEST_START - ID: e74b8826-0d97-4ff6-b3ef-6b6b24285aca, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:23:05.213885
+2025-07-31 02:23:05 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e74b8826-0d97-4ff6-b3ef-6b6b24285aca
+2025-07-31 02:23:14 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e74b8826-0d97-4ff6-b3ef-6b6b24285aca, Processing Time: 9.273s, Total Time: 9.276s, Response Size: 4798 bytes
+2025-07-31 02:23:53 - voice_communication_monitoring - INFO - REQUEST_START - ID: 879d5f99-4c56-4d96-a16f-dc4233262518, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:23:53.059954
+2025-07-31 02:23:53 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 879d5f99-4c56-4d96-a16f-dc4233262518
+2025-07-31 02:24:00 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 879d5f99-4c56-4d96-a16f-dc4233262518, Processing Time: 7.231s, Total Time: 7.234s, Response Size: 4790 bytes
+2025-07-31 02:24:32 - voice_communication_monitoring - INFO - REQUEST_START - ID: 31ce2601-d586-4d21-a6e5-d0c7de550228, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:24:32.051193
+2025-07-31 02:24:32 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 31ce2601-d586-4d21-a6e5-d0c7de550228
+2025-07-31 02:24:43 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 31ce2601-d586-4d21-a6e5-d0c7de550228, Processing Time: 11.294s, Total Time: 11.298s, Response Size: 4911 bytes
+2025-07-31 02:25:24 - voice_communication_monitoring - INFO - REQUEST_START - ID: 73803293-89a7-4642-a217-d7ea2ce54d68, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:25:24.105035
+2025-07-31 02:25:24 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 73803293-89a7-4642-a217-d7ea2ce54d68
+2025-07-31 02:25:25 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 73803293-89a7-4642-a217-d7ea2ce54d68, Processing Time: 1.349s, Total Time: 1.351s, Response Size: 3430 bytes
+2025-07-31 02:25:48 - voice_communication_monitoring - INFO - REQUEST_START - ID: 432ea034-44e4-41e7-b278-0b1f6e010edf, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:25:48.199677
+2025-07-31 02:25:48 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 432ea034-44e4-41e7-b278-0b1f6e010edf
+2025-07-31 02:25:55 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 432ea034-44e4-41e7-b278-0b1f6e010edf, Processing Time: 7.285s, Total Time: 7.288s, Response Size: 4798 bytes
+2025-07-31 02:36:04 - voice_communication_monitoring - INFO - REQUEST_START - ID: 20692d70-98f4-43d3-9b16-4e61d4529a39, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:36:04.918442
+2025-07-31 02:36:04 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 20692d70-98f4-43d3-9b16-4e61d4529a39
+2025-07-31 02:36:15 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 20692d70-98f4-43d3-9b16-4e61d4529a39, Processing Time: 10.788s, Total Time: 10.791s, Response Size: 2739 bytes
+2025-07-31 02:36:40 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8872fbd3-010e-42da-8a53-7e8fc45e80cd, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 02:36:40.162158
+2025-07-31 02:36:40 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8872fbd3-010e-42da-8a53-7e8fc45e80cd
+2025-07-31 02:36:43 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8872fbd3-010e-42da-8a53-7e8fc45e80cd, Processing Time: 3.527s, Total Time: 3.529s, Response Size: 2653 bytes
+2025-07-31 02:37:00 - voice_communication_monitoring - INFO - REQUEST_START - ID: 96051174-b6ea-4458-81c4-297a656529e1, Client: 127.0.0.1, File Size: 96044 bytes, Time: 2025-07-31 02:37:00.970060
+2025-07-31 02:37:00 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 96051174-b6ea-4458-81c4-297a656529e1
+2025-07-31 02:37:07 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 96051174-b6ea-4458-81c4-297a656529e1, Processing Time: 6.300s, Total Time: 6.303s, Response Size: 4119 bytes
+2025-07-31 02:37:30 - voice_communication_monitoring - INFO - REQUEST_START - ID: bb092abb-d6d1-44cb-85b8-777afe2c8df8, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 02:37:30.138719
+2025-07-31 02:37:30 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: bb092abb-d6d1-44cb-85b8-777afe2c8df8
+2025-07-31 02:37:34 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: bb092abb-d6d1-44cb-85b8-777afe2c8df8, Processing Time: 4.648s, Total Time: 4.650s, Response Size: 4084 bytes
+2025-07-31 02:37:56 - voice_communication_monitoring - INFO - REQUEST_START - ID: 73b411cf-6b5a-4693-9de8-ba50d375b11f, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:37:56.665620
+2025-07-31 02:37:56 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 73b411cf-6b5a-4693-9de8-ba50d375b11f
+2025-07-31 02:37:59 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 73b411cf-6b5a-4693-9de8-ba50d375b11f, Processing Time: 2.485s, Total Time: 2.487s, Response Size: 4084 bytes
+2025-07-31 02:38:20 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9320ea4b-d733-4516-8947-a06045e56017, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:38:20.074722
+2025-07-31 02:38:20 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9320ea4b-d733-4516-8947-a06045e56017
+2025-07-31 02:38:22 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9320ea4b-d733-4516-8947-a06045e56017, Processing Time: 2.253s, Total Time: 2.256s, Response Size: 4084 bytes
+2025-07-31 02:45:22 - voice_communication_monitoring - INFO - REQUEST_START - ID: 83ac3571-7505-44ed-ba7b-3b61cca4fc67, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 02:45:22.389218
+2025-07-31 02:45:22 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 83ac3571-7505-44ed-ba7b-3b61cca4fc67
+2025-07-31 02:45:28 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 83ac3571-7505-44ed-ba7b-3b61cca4fc67, Processing Time: 6.481s, Total Time: 6.482s, Response Size: 363 bytes
+2025-07-31 02:45:41 - voice_communication_monitoring - INFO - REQUEST_START - ID: 791d612d-a1d1-4b71-920e-ee0e212251c7, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 02:45:41.007417
+2025-07-31 02:45:41 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 791d612d-a1d1-4b71-920e-ee0e212251c7
+2025-07-31 02:45:45 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 791d612d-a1d1-4b71-920e-ee0e212251c7, Processing Time: 4.213s, Total Time: 4.215s, Response Size: 2571 bytes
+2025-07-31 02:45:55 - voice_communication_monitoring - INFO - REQUEST_START - ID: 552b5899-d4d9-434b-be18-701c6db90a65, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:45:55.303162
+2025-07-31 02:45:55 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 552b5899-d4d9-434b-be18-701c6db90a65
+2025-07-31 02:45:57 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 552b5899-d4d9-434b-be18-701c6db90a65, Processing Time: 2.405s, Total Time: 2.407s, Response Size: 363 bytes
+2025-07-31 02:46:07 - voice_communication_monitoring - INFO - REQUEST_START - ID: f9d0d091-5aaf-46a2-b843-d22115cde6f3, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:46:07.598266
+2025-07-31 02:46:07 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f9d0d091-5aaf-46a2-b843-d22115cde6f3
+2025-07-31 02:46:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f9d0d091-5aaf-46a2-b843-d22115cde6f3, Processing Time: 3.030s, Total Time: 3.031s, Response Size: 363 bytes
+2025-07-31 02:46:20 - voice_communication_monitoring - INFO - REQUEST_START - ID: cb5d6fe9-edc4-4fdd-a3cd-5c73ec3a1329, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:46:20.076409
+2025-07-31 02:46:20 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: cb5d6fe9-edc4-4fdd-a3cd-5c73ec3a1329
+2025-07-31 02:46:22 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: cb5d6fe9-edc4-4fdd-a3cd-5c73ec3a1329, Processing Time: 2.683s, Total Time: 2.684s, Response Size: 363 bytes
+2025-07-31 02:46:39 - voice_communication_monitoring - INFO - REQUEST_START - ID: 487eec31-3f02-4169-9f2b-38a07493af9e, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 02:46:39.039880
+2025-07-31 02:46:39 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 487eec31-3f02-4169-9f2b-38a07493af9e
+2025-07-31 02:46:42 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 487eec31-3f02-4169-9f2b-38a07493af9e, Processing Time: 3.754s, Total Time: 3.755s, Response Size: 363 bytes
+2025-07-31 02:46:53 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9eb2c8b7-3827-4bea-b25e-709c693cc17e, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 02:46:53.168269
+2025-07-31 02:46:53 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9eb2c8b7-3827-4bea-b25e-709c693cc17e
+2025-07-31 02:46:59 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9eb2c8b7-3827-4bea-b25e-709c693cc17e, Processing Time: 6.446s, Total Time: 6.448s, Response Size: 1730 bytes
+2025-07-31 02:47:16 - voice_communication_monitoring - INFO - REQUEST_START - ID: d5955260-cf2a-48d7-97a7-89309b3d39db, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:47:16.270407
+2025-07-31 02:47:16 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d5955260-cf2a-48d7-97a7-89309b3d39db
+2025-07-31 02:47:18 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d5955260-cf2a-48d7-97a7-89309b3d39db, Processing Time: 2.233s, Total Time: 2.235s, Response Size: 1710 bytes
+2025-07-31 02:47:26 - voice_communication_monitoring - INFO - REQUEST_START - ID: 60c41334-58f3-4d90-8bb7-26f2ccff9e84, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:47:26.895133
+2025-07-31 02:47:26 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 60c41334-58f3-4d90-8bb7-26f2ccff9e84
+2025-07-31 02:47:32 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 60c41334-58f3-4d90-8bb7-26f2ccff9e84, Processing Time: 5.822s, Total Time: 5.824s, Response Size: 2491 bytes
+2025-07-31 02:47:54 - voice_communication_monitoring - INFO - REQUEST_START - ID: 4c38db3b-f312-4583-9795-e931067f03c8, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:47:54.528945
+2025-07-31 02:47:54 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 4c38db3b-f312-4583-9795-e931067f03c8
+2025-07-31 02:47:56 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 4c38db3b-f312-4583-9795-e931067f03c8, Processing Time: 1.848s, Total Time: 1.850s, Response Size: 1710 bytes
+2025-07-31 02:48:06 - voice_communication_monitoring - INFO - REQUEST_START - ID: 72209e28-53f8-4aed-8cbc-bdea0460f886, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:48:06.692707
+2025-07-31 02:48:06 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 72209e28-53f8-4aed-8cbc-bdea0460f886
+2025-07-31 02:48:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 72209e28-53f8-4aed-8cbc-bdea0460f886, Processing Time: 1.393s, Total Time: 1.394s, Response Size: 2492 bytes
+2025-07-31 02:48:21 - voice_communication_monitoring - INFO - REQUEST_START - ID: b679f468-d4a1-49e4-ab56-7d0c4c3c011e, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:48:21.948357
+2025-07-31 02:48:21 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: b679f468-d4a1-49e4-ab56-7d0c4c3c011e
+2025-07-31 02:48:24 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: b679f468-d4a1-49e4-ab56-7d0c4c3c011e, Processing Time: 2.735s, Total Time: 2.737s, Response Size: 3916 bytes
+2025-07-31 02:48:51 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9cb1ac37-15a4-4eaf-a311-a6e6d481f11e, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:48:51.791020
+2025-07-31 02:48:51 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9cb1ac37-15a4-4eaf-a311-a6e6d481f11e
+2025-07-31 02:48:55 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9cb1ac37-15a4-4eaf-a311-a6e6d481f11e, Processing Time: 3.270s, Total Time: 3.272s, Response Size: 3916 bytes
+2025-07-31 02:49:02 - voice_communication_monitoring - INFO - REQUEST_START - ID: c57f3e4f-bfc8-4871-8139-822cbb1f35d2, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:49:02.878221
+2025-07-31 02:49:02 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: c57f3e4f-bfc8-4871-8139-822cbb1f35d2
+2025-07-31 02:49:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: c57f3e4f-bfc8-4871-8139-822cbb1f35d2, Processing Time: 5.693s, Total Time: 5.696s, Response Size: 3971 bytes
+2025-07-31 02:49:19 - voice_communication_monitoring - INFO - REQUEST_START - ID: e381251b-296e-4018-9919-ec312bcd9195, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:49:19.240636
+2025-07-31 02:49:19 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: e381251b-296e-4018-9919-ec312bcd9195
+2025-07-31 02:49:24 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: e381251b-296e-4018-9919-ec312bcd9195, Processing Time: 4.919s, Total Time: 4.921s, Response Size: 1710 bytes
+2025-07-31 02:49:33 - voice_communication_monitoring - INFO - REQUEST_START - ID: 944fdbc9-a0f9-4c3f-bc50-41cf0f5371d3, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:49:33.980675
+2025-07-31 02:49:33 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 944fdbc9-a0f9-4c3f-bc50-41cf0f5371d3
+2025-07-31 02:49:35 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 944fdbc9-a0f9-4c3f-bc50-41cf0f5371d3, Processing Time: 1.335s, Total Time: 1.337s, Response Size: 2492 bytes
+2025-07-31 02:49:48 - voice_communication_monitoring - INFO - REQUEST_START - ID: 0d72101b-7272-4da7-97d7-6e0ab32a6732, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 02:49:48.747729
+2025-07-31 02:49:48 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 0d72101b-7272-4da7-97d7-6e0ab32a6732
+2025-07-31 02:49:51 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 0d72101b-7272-4da7-97d7-6e0ab32a6732, Processing Time: 2.483s, Total Time: 2.485s, Response Size: 3916 bytes
+2025-07-31 02:58:31 - voice_communication_monitoring - INFO - REQUEST_START - ID: 8c7282c2-987d-4228-9561-d55ea8000b90, Client: 127.0.0.1, File Size: 128044 bytes, Time: 2025-07-31 02:58:31.136484
+2025-07-31 02:58:31 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 8c7282c2-987d-4228-9561-d55ea8000b90
+2025-07-31 02:58:37 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 8c7282c2-987d-4228-9561-d55ea8000b90, Processing Time: 6.266s, Total Time: 6.268s, Response Size: 1730 bytes
+2025-07-31 02:59:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: 2f5b7e51-a50c-4507-9338-3a55623868b9, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 02:59:18.558516
+2025-07-31 02:59:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 2f5b7e51-a50c-4507-9338-3a55623868b9
+2025-07-31 02:59:26 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 2f5b7e51-a50c-4507-9338-3a55623868b9, Processing Time: 7.648s, Total Time: 7.650s, Response Size: 1710 bytes
+2025-07-31 02:59:35 - voice_communication_monitoring - INFO - REQUEST_START - ID: 466dd9aa-3490-4bfd-aeb8-38fffa11352b, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 02:59:35.847938
+2025-07-31 02:59:35 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 466dd9aa-3490-4bfd-aeb8-38fffa11352b
+2025-07-31 02:59:39 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 466dd9aa-3490-4bfd-aeb8-38fffa11352b, Processing Time: 3.163s, Total Time: 3.165s, Response Size: 1736 bytes
+2025-07-31 03:00:01 - voice_communication_monitoring - INFO - REQUEST_START - ID: 04cf78d1-d7d6-4bcf-9a7c-5dbc90ada902, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 03:00:01.500007
+2025-07-31 03:00:01 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 04cf78d1-d7d6-4bcf-9a7c-5dbc90ada902
+2025-07-31 03:00:03 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 04cf78d1-d7d6-4bcf-9a7c-5dbc90ada902, Processing Time: 1.749s, Total Time: 1.751s, Response Size: 1736 bytes
+2025-07-31 03:00:17 - voice_communication_monitoring - INFO - REQUEST_START - ID: f7758f28-9019-4fff-968d-93d51000df0f, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 03:00:17.275181
+2025-07-31 03:00:17 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f7758f28-9019-4fff-968d-93d51000df0f
+2025-07-31 03:00:21 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f7758f28-9019-4fff-968d-93d51000df0f, Processing Time: 4.512s, Total Time: 4.514s, Response Size: 1721 bytes
+2025-07-31 03:00:50 - voice_communication_monitoring - INFO - REQUEST_START - ID: c1e80322-5a1b-44df-a62a-3ee97bace6ae, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:00:50.783734
+2025-07-31 03:00:50 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: c1e80322-5a1b-44df-a62a-3ee97bace6ae
+2025-07-31 03:00:57 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: c1e80322-5a1b-44df-a62a-3ee97bace6ae, Processing Time: 6.242s, Total Time: 6.244s, Response Size: 2492 bytes
+2025-07-31 03:01:11 - voice_communication_monitoring - INFO - REQUEST_START - ID: 7f89ed59-0a80-4302-9e2d-a8088ee98799, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:01:11.804237
+2025-07-31 03:01:11 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 7f89ed59-0a80-4302-9e2d-a8088ee98799
+2025-07-31 03:01:27 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 7f89ed59-0a80-4302-9e2d-a8088ee98799, Processing Time: 15.574s, Total Time: 15.576s, Response Size: 3916 bytes
+2025-07-31 03:01:36 - voice_communication_monitoring - INFO - REQUEST_START - ID: 45cd1be3-6c2f-450c-8e52-0cb83304618f, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:01:36.951939
+2025-07-31 03:01:36 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 45cd1be3-6c2f-450c-8e52-0cb83304618f
+2025-07-31 03:01:39 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 45cd1be3-6c2f-450c-8e52-0cb83304618f, Processing Time: 2.301s, Total Time: 2.303s, Response Size: 1710 bytes
+2025-07-31 03:08:38 - voice_communication_monitoring - INFO - REQUEST_START - ID: 67fb3ab0-d738-4f51-bfa0-63d16fd52147, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 03:08:38.532543
+2025-07-31 03:08:38 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 67fb3ab0-d738-4f51-bfa0-63d16fd52147
+2025-07-31 03:08:47 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 67fb3ab0-d738-4f51-bfa0-63d16fd52147, Processing Time: 8.752s, Total Time: 8.754s, Response Size: 1730 bytes
+2025-07-31 03:09:02 - voice_communication_monitoring - INFO - REQUEST_START - ID: 7a051fdb-5bdf-4fc9-9b49-52fe78b9d3ae, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 03:09:02.446531
+2025-07-31 03:09:02 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 7a051fdb-5bdf-4fc9-9b49-52fe78b9d3ae
+2025-07-31 03:09:08 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 7a051fdb-5bdf-4fc9-9b49-52fe78b9d3ae, Processing Time: 5.556s, Total Time: 5.557s, Response Size: 1744 bytes
+2025-07-31 03:09:20 - voice_communication_monitoring - INFO - REQUEST_START - ID: 2d1551ab-8c27-49c2-9ca4-270ea8536604, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:09:20.279506
+2025-07-31 03:09:20 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 2d1551ab-8c27-49c2-9ca4-270ea8536604
+2025-07-31 03:09:24 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 2d1551ab-8c27-49c2-9ca4-270ea8536604, Processing Time: 3.954s, Total Time: 3.956s, Response Size: 1710 bytes
+2025-07-31 03:09:33 - voice_communication_monitoring - INFO - REQUEST_START - ID: 25da9296-0fde-464d-88bd-4a4167578262, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:09:33.563614
+2025-07-31 03:09:33 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 25da9296-0fde-464d-88bd-4a4167578262
+2025-07-31 03:09:37 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 25da9296-0fde-464d-88bd-4a4167578262, Processing Time: 3.966s, Total Time: 3.968s, Response Size: 1736 bytes
+2025-07-31 03:09:50 - voice_communication_monitoring - INFO - REQUEST_START - ID: 3f39a21d-e160-420e-8600-126c3dff28f9, Client: 127.0.0.1, File Size: 64044 bytes, Time: 2025-07-31 03:09:50.940866
+2025-07-31 03:09:50 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 3f39a21d-e160-420e-8600-126c3dff28f9
+2025-07-31 03:09:57 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 3f39a21d-e160-420e-8600-126c3dff28f9, Processing Time: 6.511s, Total Time: 6.513s, Response Size: 1727 bytes
+2025-07-31 03:10:08 - voice_communication_monitoring - INFO - REQUEST_START - ID: 662be16f-6453-4f14-b954-f98efec11fe8, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:10:08.318002
+2025-07-31 03:10:08 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 662be16f-6453-4f14-b954-f98efec11fe8
+2025-07-31 03:10:10 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 662be16f-6453-4f14-b954-f98efec11fe8, Processing Time: 2.177s, Total Time: 2.179s, Response Size: 1710 bytes
+2025-07-31 03:10:18 - voice_communication_monitoring - INFO - REQUEST_START - ID: f25b1764-1005-4b0a-8e98-01465e3d603d, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:10:18.904305
+2025-07-31 03:10:18 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: f25b1764-1005-4b0a-8e98-01465e3d603d
+2025-07-31 03:10:20 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: f25b1764-1005-4b0a-8e98-01465e3d603d, Processing Time: 1.939s, Total Time: 1.941s, Response Size: 1710 bytes
+2025-07-31 03:10:31 - voice_communication_monitoring - INFO - REQUEST_START - ID: d69867f5-e943-4bd4-8c03-7067699d088d, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:10:31.233313
+2025-07-31 03:10:31 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: d69867f5-e943-4bd4-8c03-7067699d088d
+2025-07-31 03:10:34 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: d69867f5-e943-4bd4-8c03-7067699d088d, Processing Time: 3.384s, Total Time: 3.387s, Response Size: 3916 bytes
+2025-07-31 03:10:46 - voice_communication_monitoring - INFO - REQUEST_START - ID: 9cc9c289-e92b-4423-867d-418dda4db0b4, Client: 127.0.0.1, File Size: 48044 bytes, Time: 2025-07-31 03:10:46.157636
+2025-07-31 03:10:46 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 9cc9c289-e92b-4423-867d-418dda4db0b4
+2025-07-31 03:10:52 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 9cc9c289-e92b-4423-867d-418dda4db0b4, Processing Time: 5.902s, Total Time: 5.904s, Response Size: 3991 bytes
+2025-07-31 03:11:04 - voice_communication_monitoring - INFO - REQUEST_START - ID: 36d072bd-c3ef-457c-8a2e-9ae17c8b08bc, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:11:04.576550
+2025-07-31 03:11:04 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 36d072bd-c3ef-457c-8a2e-9ae17c8b08bc
+2025-07-31 03:11:06 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 36d072bd-c3ef-457c-8a2e-9ae17c8b08bc, Processing Time: 2.043s, Total Time: 2.046s, Response Size: 3916 bytes
+2025-07-31 03:11:13 - voice_communication_monitoring - INFO - REQUEST_START - ID: 3dc769d8-6134-429b-971f-a4d25922b7c7, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:11:13.923420
+2025-07-31 03:11:13 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 3dc769d8-6134-429b-971f-a4d25922b7c7
+2025-07-31 03:11:19 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 3dc769d8-6134-429b-971f-a4d25922b7c7, Processing Time: 5.431s, Total Time: 5.433s, Response Size: 3916 bytes
+2025-07-31 03:11:28 - voice_communication_monitoring - INFO - REQUEST_START - ID: 3c352c7a-74b3-4d2f-b26b-75c33ac79263, Client: 127.0.0.1, File Size: 32044 bytes, Time: 2025-07-31 03:11:28.135198
+2025-07-31 03:11:28 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 3c352c7a-74b3-4d2f-b26b-75c33ac79263
+2025-07-31 03:11:37 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 3c352c7a-74b3-4d2f-b26b-75c33ac79263, Processing Time: 9.026s, Total Time: 9.028s, Response Size: 2492 bytes
+2025-07-31 03:12:12 - voice_communication_monitoring - INFO - REQUEST_START - ID: 41e48cd1-d78a-4888-b2e3-1539e06bc5c7, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:12:12.208431
+2025-07-31 03:12:12 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 41e48cd1-d78a-4888-b2e3-1539e06bc5c7
+2025-07-31 03:12:14 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 41e48cd1-d78a-4888-b2e3-1539e06bc5c7, Processing Time: 2.164s, Total Time: 2.166s, Response Size: 3916 bytes
+2025-07-31 03:12:23 - voice_communication_monitoring - INFO - REQUEST_START - ID: 45763ec2-6164-4b37-8b54-0e2eb5e82d37, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:12:23.758753
+2025-07-31 03:12:23 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 45763ec2-6164-4b37-8b54-0e2eb5e82d37
+2025-07-31 03:12:25 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 45763ec2-6164-4b37-8b54-0e2eb5e82d37, Processing Time: 1.368s, Total Time: 1.369s, Response Size: 2492 bytes
+2025-07-31 03:12:40 - voice_communication_monitoring - INFO - REQUEST_START - ID: 20cf506a-9c53-403f-9688-5312ca1b6ef6, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 03:12:40.521656
+2025-07-31 03:12:40 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 20cf506a-9c53-403f-9688-5312ca1b6ef6
+2025-07-31 03:12:44 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 20cf506a-9c53-403f-9688-5312ca1b6ef6, Processing Time: 3.927s, Total Time: 3.929s, Response Size: 3916 bytes
+2025-07-31 15:49:12 - voice_communication_monitoring - INFO - REQUEST_START - ID: 6fe9ffc3-e70d-45eb-80da-d96c6c703a07, Client: 127.0.0.1, File Size: 16044 bytes, Time: 2025-07-31 15:49:12.543302
+2025-07-31 15:49:12 - voice_communication_monitoring - INFO - REQUEST_PROCESSING - ID: 6fe9ffc3-e70d-45eb-80da-d96c6c703a07
+2025-07-31 15:49:14 - voice_communication_monitoring - INFO - REQUEST_COMPLETE - ID: 6fe9ffc3-e70d-45eb-80da-d96c6c703a07, Processing Time: 2.356s, Total Time: 2.379s, Response Size: 387 bytes

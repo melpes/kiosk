@@ -1,0 +1,140 @@
+{
+  "restaurant_info": {
+    "name": "테스트 식당",
+    "type": "fast_food",
+    "language": "ko"
+  },
+  "categories": [
+    "버거",
+    "치킨",
+    "사이드",
+    "음료",
+    "디저트"
+  ],
+  "menu_items": {
+    "빅맥": {
+      "category": "버거",
+      "price": 6500,
+      "description": "빅맥 버거",
+      "available_options": [
+        "단품",
+        "세트",
+        "라지세트"
+      ],
+      "set_drink_options": [
+        "콜라",
+        "사이다",
+        "오렌지주스",
+        "커피"
+      ],
+      "set_side_options": [
+        "감자튀김",
+        "치킨너겟"
+      ]
+    },
+    "상하이버거": {
+      "category": "버거",
+      "price": 5500,
+      "description": "상하이 스파이시 치킨버거",
+      "available_options": [
+        "단품",
+        "세트",
+        "라지세트"
+      ],
+      "set_drink_options": [
+        "콜라",
+        "사이다",
+        "오렌지주스",
+        "커피"
+      ],
+      "set_side_options": [
+        "감자튀김",
+        "치킨너겟"
+      ]
+    },
+    "맥치킨": {
+      "category": "치킨",
+      "price": 4500,
+      "description": "맥치킨 버거",
+      "available_options": [
+        "단품",
+        "세트",
+        "라지세트"
+      ],
+      "set_drink_options": [
+        "콜라",
+        "사이다",
+        "오렌지주스",
+        "커피"
+      ],
+      "set_side_options": [
+        "감자튀김",
+        "치킨너겟"
+      ]
+    },
+    "감자튀김": {
+      "category": "사이드",
+      "price": 2500,
+      "description": "바삭한 감자튀김",
+      "available_options": [
+        "미디움",
+        "라지"
+      ],
+      "set_drink_options": [],
+      "set_side_options": []
+    },
+    "치킨너겟": {
+      "category": "사이드",
+      "price": 3500,
+      "description": "치킨너겟 4조각",
+      "available_options": [
+        "4조각",
+        "6조각",
+        "10조각"
+      ],
+      "set_drink_options": [],
+      "set_side_options": []
+    },
+    "콜라": {
+      "category": "음료",
+      "price": 2000,
+      "description": "코카콜라",
+      "available_options": [
+        "미디움",
+        "라지"
+      ],
+      "set_drink_options": [],
+      "set_side_options": []
+    },
+    "사이다": {
+      "category": "음료",
+      "price": 2000,
+      "description": "스프라이트",
+      "available_options": [
+        "미디움",
+        "라지"
+      ],
+      "set_drink_options": [],
+      "set_side_options": []
+    },
+    "아이스크림": {
+      "category": "디저트",
+      "price": 1500,
+      "description": "바닐라 아이스크림",
+      "available_options": [
+        "일반"
+      ],
+      "set_drink_options": [],
+      "set_side_options": []
+    }
+  },
+  "set_pricing": {
+    "세트": 2000,
+    "라지세트": 3000
+  },
+  "option_pricing": {
+    "라지": 500,
+    "6조각": 1000,
+    "10조각": 2500
+  }
+}
