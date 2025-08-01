@@ -1,0 +1,69 @@
+# ===== 핵심 AI/ML 패키지 =====
+# OpenAI API (대화 시스템 핵심)
+openai>=1.30.0
+
+# 음성 인식 (Whisper)
+openai-whisper==20231117
+torch>=1.9.0
+torchaudio==2.1.2
+
+# HuggingFace (필요시 Whisper 대체)
+transformers==4.37.2
+
+# 수치 계산
+numpy==1.24.3
+
+# ===== 오디오 처리 =====
+# 오디오 전처리 및 분석
+librosa==0.10.1
+
+# 오디오 파일 입출력
+soundfile==0.12.1
+
+# 마이크 입력
+sounddevice>=0.4.0
+
+# ===== 웹 API =====
+# 웹 프레임워크
+fastapi==0.104.1
+
+# ASGI 서버
+uvicorn[standard]==0.24.0
+
+# 파일 업로드
+python-multipart==0.0.6
+
+# ===== 데이터 검증 및 설정 =====
+# FastAPI와 함께 필수 (데이터 검증)
+pydantic==2.5.3
+
+# 환경변수 관리
+python-dotenv==1.0.0
+
+# YAML 설정 파일
+PyYAML==6.0.1
+
+# ===== 로깅 =====
+# 로깅 시스템
+loguru==0.7.2
+
+# ===== 보안 =====
+# 파일 타입 검증
+python-magic==0.4.27
+
+# ===== HTTP 요청 =====
+# API 요청용
+requests==2.32.4
+
+# ===== 개발/테스트 도구 =====
+# 테스팅 프레임워크
+pytest==7.4.4
+pytest-asyncio==0.23.2
+pytest-mock==3.12.0
+
+# ===== 호환성 패키지 (일부 자동 설치 안되는 필수 의존성) =====
+# 타입 힌트 (Python 3.8+ 호환)
+typing_extensions>=4.8.0
+
+# Windows 호환성 (Windows에서만 필요)
+colorama==0.4.6

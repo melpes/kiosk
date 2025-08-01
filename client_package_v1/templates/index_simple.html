@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실시간 음성 클라이언트</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .container {
+            flex: 1;
+            max-width: none;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .sidebar {
+            width: 350px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            transform: translateX(100%);
+        }
+        
+        .sidebar.collapsed {
+            transform: translateX(100%);
+        }
+        
+        .sidebar:not(.collapsed) {
+            transform: translateX(0);
+        }
+        
+        .sidebar-header {
+            background: #e74c3c;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .sidebar-toggle {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .sidebar-content {
+            padding: 20px;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .menu-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            font-size: 20px;
+            padding: 10px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .menu-toggle:hover {
+            background: rgba(255,255,255,0.3);
+            transform: scale(1.1);
+        }
+        
+        .collapsible-section {
+            transition: all 0.3s ease;
+            overflow: hidden;
+        }
+        
+        .collapsible-section.collapsed {
+            max-height: 0;
+            padding: 0 20px;
+            border-top: none;
+        }
+        
+        .section-header {
+            background: #f8f9fa;
+            padding: 15px 20px;
+            border-top: 1px solid #eee;
+            cursor: pointer;
+            user-select: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        .section-header:hover {
+            background: #e9ecef;
+        }
+        
+        .section-header h3 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        
+        .section-arrow {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+        
+        .section-arrow.collapsed {
+            transform: rotate(-90deg);
+        }
+        
+        .status {
+            padding: 15px;
+            margin: 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+        
+        .status.connected {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .status.disconnected {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .controls {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-start {
+            background: #28a745;
+            color: white;
+        }
+        
+        .btn-start:hover {
+            background: #218838;
+        }
+        
+        .btn-stop {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .btn-stop:hover {
+            background: #c82333;
+        }
+        
+        .btn:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+        }
+        
+        .config-section {
+            padding: 20px;
+            border-top: 1px solid #eee;
+        }
+        
+        .config-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        .log-section {
+            padding: 20px;
+            border-top: 1px solid #eee;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .log-entry {
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        .log-info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        
+        .log-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        
+        .log-warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .audio-player {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .audio-player audio {
+            width: 100%;
+            margin-top: 5px;
+        }
+        
+        .order-info {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 20px;
+            margin: 0;
+            border-bottom: 3px solid #1e7e34;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .order-info h3 {
+            margin: 0 0 15px 0;
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        .order-content {
+            background: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .order-item {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 15px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border-left: 4px solid #fff;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .order-item .item-name {
+            flex: 1;
+        }
+        
+        .order-item .item-quantity {
+            background: rgba(255,255,255,0.3);
+            padding: 4px 12px;
+            border-radius: 15px;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+        
+        .order-item .item-price {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .order-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        
+        .order-total {
+            background: rgba(255,255,255,0.2);
+            padding: 12px 20px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+        
+        /* 사이드바 메뉴 스타일 */
+        .sidebar-menu {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        
+        .sidebar-menu h3 {
+            margin: 0;
+            padding: 15px;
+            font-size: 16px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            background: rgba(255,255,255,0.1);
+        }
+        
+        .sidebar-menu-content {
+            padding: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .sidebar-menu-item {
+            background: rgba(255,255,255,0.15);
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+            border-left: 4px solid #fff;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .sidebar-menu-item:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateX(3px);
+        }
+        
+        .sidebar-menu-item .item-name {
+            font-weight: bold;
+            margin-bottom: 4px;
+            font-size: 14px;
+        }
+        
+        .sidebar-menu-item .item-description {
+            font-size: 11px;
+            opacity: 0.9;
+            margin-bottom: 6px;
+        }
+        
+        .sidebar-menu-item .item-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .sidebar-menu-item .item-category {
+            background: rgba(255,255,255,0.3);
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 10px;
+        }
+        
+        .sidebar-menu-item .item-price {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .sidebar-menu-empty {
+            padding: 20px;
+            text-align: center;
+            color: rgba(255,255,255,0.8);
+            font-style: italic;
+        }
+        
+        .sidebar-menu-toggle-btn {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 8px;
+            border-radius: 8px 0 0 8px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+        }
+        
+        .sidebar-menu-toggle-btn:hover {
+            background: #c0392b;
+            transform: translateY(-50%) translateX(-5px);
+        }
+        
+        .btn-clear {
+            background: rgba(220,53,69,0.8);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-clear:hover {
+            background: rgba(220,53,69,1);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- 사이드바 토글 버튼 -->
+    <button class="sidebar-menu-toggle-btn" onclick="toggleSidebar()" title="메뉴 사이드바 토글">
+        📖
+    </button>
+    
+    <div class="container">
+        <div class="header">
+            <button class="menu-toggle" onclick="toggleAllSections()" title="메뉴 토글">
+                ☰
+            </button>
+            <h1>🎤 실시간 음성 클라이언트</h1>
+            <p>웹 기반 음성 인식 및 응답 시스템</p>
+        </div>
+        
+        <div id="order-info" class="order-info" style="display: none;">
+            <h3>🛒 현재 주문 정보</h3>
+            <div id="order-content">
+                <div class="order-item">주문 정보가 없습니다.</div>
+            </div>
+            <div class="order-meta">
+                <span id="order-timestamp">-</span>
+                <button onclick="clearOrder()" class="btn-clear">🗑️ 초기화</button>
+            </div>
+        </div>
+        
+        <div id="status" class="status disconnected">
+            <span id="status-text">연결 중...</span>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn btn-start" onclick="startSession()">
+                🚀 세션 시작
+            </button>
+            <button id="stop-btn" class="btn btn-stop" onclick="stopSession()" disabled>
+                ⏹️ 세션 중지
+            </button>
+        </div>
+        
+        <div class="section-header" onclick="toggleSection('config-section')">
+            <h3>⚙️ 서버 설정</h3>
+            <span class="section-arrow">▼</span>
+        </div>
+        <div id="config-section" class="config-section collapsible-section">
+            <input type="text" id="server-url" class="config-input" placeholder="서버 URL (예: http://localhost:8001)">
+            <button class="btn" onclick="updateConfig()" style="background: #007bff; color: white;">
+                설정 저장
+            </button>
+            <button class="btn" onclick="testTTS()" style="background: #28a745; color: white;">
+                🔊 TTS 테스트
+            </button>
+            <button class="btn" onclick="testOrder()" style="background: #17a2b8; color: white;">
+                🛒 주문 테스트
+            </button>
+        </div>
+        
+        <div class="section-header" onclick="toggleSection('log-section')">
+            <h3>📋 실시간 로그</h3>
+            <span class="section-arrow">▼</span>
+        </div>
+        <div id="log-section" class="log-section collapsible-section">
+            <div id="logs"></div>
+        </div>
+    </div>
+    
+    <!-- 메뉴 사이드바 -->
+    <div id="sidebar" class="sidebar collapsed">
+        <div class="sidebar-header">
+            <button class="sidebar-toggle" onclick="toggleSidebar()" title="사이드바 닫기">
+                ✕
+            </button>
+            <h2>🍽️ 식당 메뉴</h2>
+            <p>맛있는 음식을 선택하세요</p>
+        </div>
+        <div class="sidebar-content">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <h3 id="sidebar-menu-title">📋 메뉴</h3>
+                <div id="sidebar-menu-content" class="sidebar-menu-content">
+                    <div class="sidebar-menu-empty">
+                        아직 메뉴가 로드되지 않았습니다.<br>
+                        음성으로 메뉴를 요청해보세요!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const socket = io();
+        let isRunning = false;
+        
+        // 소켓 이벤트 리스너
+        socket.on('connect', function() {
+            addLog('웹소켓 연결됨', 'info');
+        });
+        
+        socket.on('status', function(data) {
+            updateStatus(data.message, data.running);
+            addLog(data.message, 'info');
+        });
+        
+        socket.on('error', function(data) {
+            addLog('❌ ' + data.message, 'error');
+            updateButtons(false);
+        });
+        
+        socket.on('warning', function(data) {
+            addLog('⚠️ ' + data.message, 'warning');
+        });
+        
+        socket.on('response', function(data) {
+            addLog('💬 서버 응답: ' + data.text, 'info');
+            
+            // 주문 정보 업데이트 (null일 때도 처리하여 주문창 숨김)
+            if (data.hasOwnProperty('order_data')) {
+                updateOrderInfo(data.order_data);
+            }
+            
+            // UI 액션 처리
+            if (data.ui_actions && data.ui_actions.length > 0) {
+                processUIActions(data.ui_actions);
+            }
+        });
+        
+        socket.on('order_update', function(data) {
+            console.log('주문 정보 업데이트:', data);
+            updateOrderInfo(data);
+        });
+        
+        socket.on('ui_actions', function(data) {
+            console.log('🎯 UI 액션 수신:', data);
+            processUIActions(data);
+        });
+        
+        socket.on('info', function(data) {
+            addLog('ℹ️ ' + data.message, 'info');
+        });
+        
+        socket.on('audio', function(data) {
+            console.log('🔊 TTS 오디오 데이터 수신:', data);
+            addLog('🔊 TTS 오디오 수신: ' + (data.filename || data.path), 'info');
+            playTTSAudio(data);
+        });
+        
+        // 메뉴 토글 함수들
+        let allSectionsCollapsed = false;
+        let sidebarCollapsed = true;
+        
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const arrow = section.previousElementSibling.querySelector('.section-arrow');
+            
+            if (section.classList.contains('collapsed')) {
+                section.classList.remove('collapsed');
+                arrow.classList.remove('collapsed');
+                arrow.textContent = '▼';
+            } else {
+                section.classList.add('collapsed');
+                arrow.classList.add('collapsed');
+                arrow.textContent = '▶';
+            }
+        }
+        
+        function toggleAllSections() {
+            const sections = ['config-section', 'log-section'];
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            sections.forEach(sectionId => {
+                const section = document.getElementById(sectionId);
+                const arrow = section.previousElementSibling.querySelector('.section-arrow');
+                
+                if (allSectionsCollapsed) {
+                    section.classList.remove('collapsed');
+                    arrow.classList.remove('collapsed');
+                    arrow.textContent = '▼';
+                } else {
+                    section.classList.add('collapsed');
+                    arrow.classList.add('collapsed');
+                    arrow.textContent = '▶';
+                }
+            });
+            
+            allSectionsCollapsed = !allSectionsCollapsed;
+            menuToggle.textContent = allSectionsCollapsed ? '☱' : '☰';
+        }
+        
+        // 사이드바 토글 함수
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const toggleBtn = document.querySelector('.sidebar-menu-toggle-btn');
+            
+            if (sidebarCollapsed) {
+                sidebar.classList.remove('collapsed');
+                toggleBtn.textContent = '📋';
+                sidebarCollapsed = false;
+            } else {
+                sidebar.classList.add('collapsed');
+                toggleBtn.textContent = '📖';
+                sidebarCollapsed = true;
+            }
+        }
+        
+        // 함수들
+        function startSession() {
+            socket.emit('start_session');
+            updateButtons(true);
+            addLog('세션 시작 요청...', 'info');
+        }
+        
+        function stopSession() {
+            socket.emit('stop_session');
+            updateButtons(false);
+            addLog('세션 중지 요청...', 'info');
+        }
+        
+        function updateStatus(message, running) {
+            const statusEl = document.getElementById('status');
+            const statusText = document.getElementById('status-text');
+            
+            statusText.textContent = message;
+            isRunning = running;
+            
+            if (running) {
+                statusEl.className = 'status connected';
+            } else {
+                statusEl.className = 'status disconnected';
+            }
+            
+            updateButtons(running);
+        }
+        
+        function updateButtons(running) {
+            const startBtn = document.getElementById('start-btn');
+            const stopBtn = document.getElementById('stop-btn');
+            
+            startBtn.disabled = running;
+            stopBtn.disabled = !running;
+        }
+        
+        function addLog(message, type) {
+            const logsEl = document.getElementById('logs');
+            const logEntry = document.createElement('div');
+            logEntry.className = `log-entry log-${type}`;
+            logEntry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            
+            logsEl.appendChild(logEntry);
+            logsEl.scrollTop = logsEl.scrollHeight;
+            
+            // 로그 개수 제한 (최대 100개)
+            while (logsEl.children.length > 100) {
+                logsEl.removeChild(logsEl.firstChild);
+            }
+        }
+        
+        function updateConfig() {
+            const serverUrl = document.getElementById('server-url').value;
+            if (!serverUrl) {
+                addLog('서버 URL을 입력해주세요', 'error');
+                return;
+            }
+            
+            fetch('/config', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    server: { url: serverUrl }
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addLog('설정이 저장되었습니다', 'info');
+                } else {
+                    addLog('설정 저장 실패: ' + data.message, 'error');
+                }
+            })
+            .catch(error => {
+                addLog('설정 저장 중 오류: ' + error, 'error');
+            });
+        }
+        
+        function testTTS() {
+            socket.emit('test_tts');
+            addLog('🧪 TTS 테스트 요청 전송', 'info');
+        }
+        
+        function playTTSAudio(audioData) {
+            try {
+                console.log('TTS 오디오 재생 시도:', audioData);
+                
+                const audioPlayer = document.createElement('div');
+                audioPlayer.className = 'audio-player';
+                
+                const testLabel = audioData.test ? ' (테스트)' : '';
+                const filename = audioData.filename || audioData.path || 'unknown';
+                
+                audioPlayer.innerHTML = `
+                    <div>🔊 TTS 음성${testLabel} (${new Date().toLocaleTimeString()})</div>
+                    <div style="font-size: 12px; color: #666;">파일: ${filename}</div>
+                    <audio controls preload="auto" style="width: 100%; margin-top: 5px;">
+                        <source src="${audioData.url}" type="audio/wav">
+                        <source src="${audioData.url}" type="audio/mpeg">
+                        <source src="${audioData.url}" type="audio/mp3">
+                        브라우저가 오디오를 지원하지 않습니다.
+                    </audio>
+                    <div style="margin-top: 5px;">
+                        <button onclick="playAudio(this)" style="padding: 5px 10px;">▶️ 재생</button>
+                    </div>
+                `;
+                
+                const logsEl = document.getElementById('logs');
+                logsEl.appendChild(audioPlayer);
+                logsEl.scrollTop = logsEl.scrollHeight;
+                
+                // 오디오 요소 가져오기
+                const audio = audioPlayer.querySelector('audio');
+                
+                // 오디오 이벤트 리스너
+                audio.addEventListener('loadstart', function() {
+                    console.log('오디오 로드 시작:', audioData.url);
+                });
+                
+                audio.addEventListener('canplay', function() {
+                    console.log('오디오 재생 준비 완료');
+                    addLog('🔊 TTS 오디오 재생 준비 완료', 'info');
+                    
+                    // 자동 재생 시도 (테스트가 아닌 경우)
+                    if (!audioData.test) {
+                        tryAutoPlay(audio);
+                    }
+                });
+                
+                audio.addEventListener('error', function(e) {
+                    console.error('오디오 로드 오류:', e);
+                    console.error('오디오 URL:', audioData.url);
+                    console.error('오디오 파일명:', audioData.filename);
+                    addLog('❌ 오디오 재생 실패: ' + audioData.filename + ' (' + audioData.url + ')', 'error');
+                    
+                    // 오류 상세 정보 표시
+                    if (audio.error) {
+                        const errorCode = audio.error.code;
+                        const errorMessage = {
+                            1: 'MEDIA_ERR_ABORTED - 사용자에 의해 중단됨',
+                            2: 'MEDIA_ERR_NETWORK - 네트워크 오류',
+                            3: 'MEDIA_ERR_DECODE - 디코딩 오류',
+                            4: 'MEDIA_ERR_SRC_NOT_SUPPORTED - 지원되지 않는 형식'
+                        };
+                        addLog('오류 상세: ' + (errorMessage[errorCode] || '알 수 없는 오류'), 'error');
+                    }
+                });
+                
+                audio.addEventListener('play', function() {
+                    addLog('▶️ TTS 오디오 재생 시작', 'info');
+                });
+                
+                audio.addEventListener('ended', function() {
+                    addLog('⏹️ TTS 오디오 재생 완료', 'info');
+                });
+                
+                // 오디오 로드 시작
+                audio.load();
+                
+            } catch (error) {
+                console.error('TTS 오디오 재생 오류:', error);
+                addLog('❌ TTS 오디오 재생 오류: ' + error.message, 'error');
+            }
+        }
+        
+        function tryAutoPlay(audio) {
+            // 자동 재생 시도
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    console.log('자동 재생 성공');
+                }).catch(error => {
+                    console.log('자동 재생 실패 (사용자 상호작용 필요):', error);
+                    addLog('🔇 자동 재생 실패 - 수동으로 재생 버튼을 클릭하세요', 'warning');
+                });
+            }
+        }
+        
+        function playAudio(button) {
+            const audioPlayer = button.closest('.audio-player');
+            const audio = audioPlayer.querySelector('audio');
+            
+            if (audio.paused) {
+                audio.play().then(() => {
+                    button.textContent = '⏸️ 일시정지';
+                }).catch(error => {
+                    addLog('재생 실패: ' + error.message, 'error');
+                });
+            } else {
+                audio.pause();
+                button.textContent = '▶️ 재생';
+            }
+        }
+        
+        function updateOrderInfo(orderData) {
+            try {
+                console.log('주문 정보 업데이트:', orderData);
+                
+                const orderInfoEl = document.getElementById('order-info');
+                const orderContentEl = document.getElementById('order-content');
+                const orderTimestampEl = document.getElementById('order-timestamp');
+                
+                if (!orderData || !orderData.items || orderData.items.length === 0) {
+                    // 주문 정보가 없으면 숨기기
+                    orderInfoEl.style.display = 'none';
+                    return;
+                }
+                
+                // 주문 헤더 정보
+                let headerInfo = '🛒 현재 주문 정보';
+                if (orderData.order_id) {
+                    headerInfo += ` (주문번호: ${orderData.order_id.substring(0, 8)}...)`;
+                }
+                if (orderData.status) {
+                    const statusEmoji = {
+                        'pending': '⏳',
+                        'confirmed': '✅',
+                        'processing': '🔄',
+                        'completed': '✅',
+                        'cancelled': '❌'
+                    };
+                    headerInfo += ` ${statusEmoji[orderData.status] || '📋'} ${orderData.status}`;
+                }
+                
+                document.querySelector('#order-info h3').textContent = headerInfo;
+                
+                // 주문 항목들 표시
+                let orderHtml = '';
+                let calculatedTotal = 0;
+                
+                orderData.items.forEach((item, index) => {
+                    const itemTotal = item.price || 0;
+                    calculatedTotal += itemTotal;
+                    
+                    // 카테고리 표시
+                    const categoryBadge = item.category ? 
+                        `<span style="background: rgba(255,255,255,0.3); padding: 2px 8px; border-radius: 10px; font-size: 12px; margin-left: 8px;">${item.category}</span>` : '';
+                    
+                    orderHtml += `
+                        <div class="order-item">
+                            <span class="item-name">
+                                ${item.name || '알 수 없는 메뉴'}
+                                ${categoryBadge}
+                            </span>
+                            <span class="item-quantity">x${item.quantity || 1}</span>
+                            <span class="item-price">${formatPrice(itemTotal)}</span>
+                        </div>
+                    `;
+                });
+                
+                // 총 금액 표시 (서버에서 온 total_amount 우선 사용)
+                const finalTotal = orderData.total || calculatedTotal;
+                if (finalTotal > 0) {
+                    orderHtml += `
+                        <div class="order-total">
+                            총 금액: ${formatPrice(finalTotal)}
+                            ${orderData.item_count ? `(${orderData.item_count}개 상품)` : ''}
+                        </div>
+                    `;
+                }
+                
+                // 확인 필요 표시
+                if (orderData.requires_confirmation) {
+                    orderHtml += `
+                        <div style="background: rgba(255,193,7,0.3); padding: 8px 12px; border-radius: 8px; margin-top: 8px; text-align: center;">
+                            ⚠️ 주문 확인이 필요합니다
+                        </div>
+                    `;
+                }
+                
+                orderContentEl.innerHTML = orderHtml;
+                
+                // 타임스탬프 업데이트
+                let timestampText = `업데이트: ${new Date().toLocaleTimeString()}`;
+                if (orderData.created_at) {
+                    const createdTime = new Date(orderData.created_at).toLocaleTimeString();
+                    timestampText += ` | 주문시간: ${createdTime}`;
+                }
+                orderTimestampEl.textContent = timestampText;
+                
+                // 주문 정보 표시
+                orderInfoEl.style.display = 'block';
+                
+                addLog(`🛒 주문 정보 업데이트됨 (${orderData.items.length}개 상품, ${formatPrice(finalTotal)})`, 'info');
+                
+            } catch (error) {
+                console.error('주문 정보 업데이트 오류:', error);
+                addLog('❌ 주문 정보 업데이트 실패: ' + error.message, 'error');
+            }
+        }
+        
+        function formatPrice(price) {
+            if (typeof price !== 'number') return '가격 미정';
+            return price.toLocaleString() + '원';
+        }
+        
+        function clearOrder() {
+            socket.emit('clear_order');
+        }
+        
+        function testOrder() {
+            socket.emit('test_order');
+            addLog('🧪 주문 정보 테스트 요청 전송', 'info');
+        }
+        
+        // UI 액션 처리 함수
+        function processUIActions(actions) {
+            try {
+                console.log('🎯 UI 액션 처리 시작:', actions);
+                
+                // 우선순위별로 정렬
+                actions.sort((a, b) => (b.priority || 0) - (a.priority || 0));
+                
+                actions.forEach((action, index) => {
+                    console.log(`${index + 1}. ${action.action_type} 처리 중...`);
+                    
+                    switch (action.action_type) {
+                        case 'show_menu':
+                            handleShowMenu(action.data);
+                            break;
+                        case 'show_payment':
+                            handleShowPayment(action.data);
+                            break;
+                        case 'update_order':
+                            // 이미 order_update 이벤트에서 처리됨
+                            console.log('주문 업데이트는 별도 처리됨');
+                            break;
+                        case 'show_confirmation':
+                            handleShowConfirmation(action.data);
+                            break;
+                        case 'show_error':
+                            handleShowError(action.data);
+                            break;
+                        default:
+                            console.log('알 수 없는 액션 타입:', action.action_type);
+                    }
+                });
+                
+                addLog(`🎯 ${actions.length}개 UI 액션 처리 완료`, 'info');
+                
+            } catch (error) {
+                console.error('UI 액션 처리 오류:', error);
+                addLog('❌ UI 액션 처리 실패: ' + error.message, 'error');
+            }
+        }
+        
+        // 메뉴 표시 처리 (사이드바)
+        function handleShowMenu(data) {
+            try {
+                console.log('📋 메뉴 표시:', data);
+                
+                const sidebarMenuContentEl = document.getElementById('sidebar-menu-content');
+                const sidebarMenuTitleEl = document.getElementById('sidebar-menu-title');
+                const sidebar = document.getElementById('sidebar');
+                
+                if (!data.menu_options || data.menu_options.length === 0) {
+                    sidebarMenuContentEl.innerHTML = `
+                        <div class="sidebar-menu-empty">
+                            메뉴를 찾을 수 없습니다.<br>
+                            다시 시도해주세요.
+                        </div>
+                    `;
+                    return;
+                }
+                
+                // 메뉴 제목 설정
+                let title = '📋 메뉴';
+                if (data.category) {
+                    title += ` - ${data.category}`;
+                }
+                sidebarMenuTitleEl.textContent = title;
+                
+                // 메뉴 항목들 표시
+                let menuHtml = '';
+                data.menu_options.forEach(option => {
+                    if (option.available !== false) {  // 사용 가능한 메뉴만 표시
+                        menuHtml += `
+                            <div class="sidebar-menu-item" onclick="selectMenuItem('${option.option_id}')">
+                                <div class="item-name">${option.display_text || option.name}</div>
+                                ${option.description ? `<div class="item-description">${option.description}</div>` : ''}
+                                <div class="item-footer">
+                                    ${option.category ? `<div class="item-category">${option.category}</div>` : '<div></div>'}
+                                    <div class="item-price">${formatPrice(option.price)}</div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                });
+                
+                sidebarMenuContentEl.innerHTML = menuHtml;
+                
+                // 사이드바가 닫혀있으면 자동으로 열기
+                if (sidebarCollapsed) {
+                    toggleSidebar();
+                }
+                
+                addLog(`📋 메뉴 사이드바에 표시됨 (${data.menu_options.length}개 항목)`, 'info');
+                
+            } catch (error) {
+                console.error('메뉴 표시 오류:', error);
+                addLog('❌ 메뉴 표시 실패: ' + error.message, 'error');
+            }
+        }
+        
+        // 메뉴 항목 선택
+        function selectMenuItem(optionId) {
+            console.log('메뉴 선택:', optionId);
+            addLog(`🍔 메뉴 선택: ${optionId}`, 'info');
+            // 실제로는 음성으로 해당 메뉴를 말하도록 안내하거나
+            // 서버에 선택 정보를 전송할 수 있음
+        }
+        
+        // 결제 화면 표시 처리
+        function handleShowPayment(data) {
+            console.log('💳 결제 화면 표시:', data);
+            addLog('💳 결제 화면이 표시되었습니다', 'info');
+            // 실제 결제 UI 구현 가능
+        }
+        
+        // 확인 화면 표시 처리
+        function handleShowConfirmation(data) {
+            console.log('❓ 확인 요청:', data);
+            addLog(`❓ 확인: ${data.message || '확인이 필요합니다'}`, 'warning');
+        }
+        
+        // 오류 표시 처리
+        function handleShowError(data) {
+            console.log('❌ 오류 표시:', data);
+            addLog(`❌ 오류: ${data.error_message || '오류가 발생했습니다'}`, 'error');
+        }
+        
+        // 페이지 로드 시 현재 설정 불러오기
+        fetch('/config')
+            .then(response => response.json())
+            .then(config => {
+                document.getElementById('server-url').value = config.server.url;
+                addLog('현재 설정 로드됨', 'info');
+            })
+            .catch(error => {
+                addLog('설정 로드 실패: ' + error, 'error');
+            });
+    </script>
+</body>
+</html>
